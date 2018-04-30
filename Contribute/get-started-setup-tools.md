@@ -8,11 +8,11 @@ ms.date: 01/04/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 62c4b234f23b470ffea33cacdfc469fbd7e526bd
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="install-content-authoring-tools"></a>コンテンツ オーサリング ツールのインストール
 
@@ -22,9 +22,9 @@ ms.lasthandoff: 04/23/2018
 > * [Visual Studio Code](https://code.visualstudio.com/) をインストールする
 
 >[!IMPORTANT]
-> 記事に軽微な変更しか加えていない場合は、この記事の手順を実行する必要は*ない*ため、直接[軽微な/低頻度の変更のワークフロー](light-workflow.md)に進めます。
+> 記事に軽微な変更しか加えていない場合は、この記事の手順を実行する必要は*ない*ため、直接[簡易な変更のワークフロー](index.md#quick-edits-to-existing-documents)に進めます。
 >
-> 大規模な変更を行う共同作成者は、これらの手順を実行することをお勧めします。そうすることで、[大規模/長期間の変更のワークフロー](full-workflow.md)を使用できるようになります。 メイン リポジトリで書き込みアクセス許可を持っている場合でも、"*リポジトリのフォークと複製を行うことを強くお勧めします (本ガイドでもそれを前提としています)*"。それにより、予定している変更をフォークに保存するための読み取り/書き込み権限が付与されます。
+> 大規模な変更を行う共同作成者は、これらの手順を実行することをお勧めします。そうすることで、[大規模/長期間の変更のワークフロー](how-to-write-workflows-major.md)を使用できるようになります。 メイン リポジトリで書き込みアクセス許可を持っている場合でも、"*リポジトリのフォークと複製を行うことを強くお勧めします (本ガイドでもそれを前提としています)*"。それにより、予定している変更をフォークに保存するための読み取り/書き込み権限が付与されます。
 
 ## <a name="install-git-client-tools-on-windows"></a>Git クライアント ツールを Windows にインストールする
 
