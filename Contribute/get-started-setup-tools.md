@@ -1,18 +1,18 @@
 ---
 title: コンテンツ オーサリング ツールのインストール
 description: この記事は、Git、および Markdown ファイルの編集に必要なクライアント ツールのダウンロードとインストールに役立ちます。
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
-ms.date: 01/04/2018
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-content-authoring-tools"></a>コンテンツ オーサリング ツールのインストール
 
@@ -20,6 +20,7 @@ ms.lasthandoff: 04/28/2018
 > [!div class="checklist"]
 > * [Git for Windows](https://git-scm.com/download/win) をインストールする
 > * [Visual Studio Code](https://code.visualstudio.com/) をインストールする
+> * [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) をインストールする
 
 >[!IMPORTANT]
 > 記事に軽微な変更しか加えていない場合は、この記事の手順を実行する必要は*ない*ため、直接[簡易な変更のワークフロー](index.md#quick-edits-to-existing-documents)に進めます。
@@ -58,6 +59,16 @@ Markdown の基本と OPS による Markdown のカスタム拡張機能でサ�
 
 > [!TIP]
 > VS Code を起動し、現在のフォルダーを開き、コマンド ラインまたは bash シェルで `code .` コマンドを実行します。 現在のフォルダーがローカル git リポジトリの一部である場合は、github 統合が Visual Studio Code に自動的に表示されます。
+
+## <a name="docs-authoring-pack"></a>Docs Authoring Pack
+Visual Studio Code 用に Docs Authoring Pack をインストールします。 この一連の拡張機能には、Markdown の記述に役立つ基本的な作成サポートやプレビュー機能が含まれているため、docs.microsoft.com サイトのスタイルで Markdown がどのように表示されるかを確認できます。
+
+   この [Marketplace ページ](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)にアクセスして **[インストール]** を選択するか、VS Code ウィンドウの拡張機能の一覧で `docsmsft.docs-authoring-pack` を検索します。 
+
+   Docs Authoring Pack にアクセスするには、VS Code 内で Alt+M を押します。 ツール バーは既定で非表示ですが、表示できます。 VS Code の設定を編集し (Ctrl+コンマ)、ユーザー設定 `"markdown.showToolbar": true` を追加して、ツール バーを表示します。
+
+   詳しくは、[Docs Authoring Pack](how-to-write-docs-auth-pack.md) に関するページを参照してください。
+
 
 ## <a name="next-steps"></a>次のステップ
 
