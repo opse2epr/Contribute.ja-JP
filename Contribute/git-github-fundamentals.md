@@ -8,11 +8,11 @@ ms.date: 06/30/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 5ad2ca323b680078c2bfd2fc4cac6fb1883c411f
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git および GitHub のドキュメントの基礎
 
@@ -80,7 +80,7 @@ GitHub は、[docs.microsoft.com](https://docs.microsoft.com) コンテンツの
 
 *プル要求* は、共同作成者が既定のブランチに適用される一連の変更内容を提案できる便利な手段です。 変更内容 (*コミット* ともいう) は共同作成者のブランチに格納されるため、GitHub は既定のブランチに変更内容を*マージする* 影響をあらかじめモデル化することができます。 プル要求は、変更内容が既定のブランチにマージされる前に潜在的な問題や疑問を解消するために、ビルド/検証プロセスやプル要求のレビュー担当者からのフィードバックを共同作成者に提供するメカニズムとしても機能します。
 
-提案する変更内容のサイズに応じて、プル要求で共同作成を行う方法が 2 つあります。 これについては、このガイドで後述する [GitHub のワークフロー](light-workflow.md)に関するセクションで詳しく説明します。
+提案する変更内容のサイズに応じて、プル要求で共同作成を行う方法が 2 つあります。 これについては、このガイドで後述する [GitHub のワークフロー](how-to-write-workflows-major.md)に関するセクションで詳しく説明します。
 
 <!---- Reference links for Docs landing pages, associated GitHub repositories, and related Forums matrix. ------------------>
 <!---- PLEASE INSERT URLS IN ASCENDING SORT ORDER, AND REMOVE LOCALE SEGMENT FROM URLS (that is, en-us) FOR LOCALIZED FORUMS! -->
