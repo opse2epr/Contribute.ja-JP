@@ -1,19 +1,18 @@
 ---
 title: VS Code 用 Docs Authoring Pack
-description: docs.microsoft.com の Markdown の作成を促進する VS Code 拡張パック
+description: この記事では、docs.microsoft.com の Markdown の作成を促進する VS Code 拡張パックについて説明します。
 author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.article: contributor-guide
-ms.prod: n.a
-ms.service: n.a
-ms.technology: n.a
-ms.openlocfilehash: 5c857deb07e28e1f6744c895a291bf78a6acf1df
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>VS Code 用 Docs Authoring Pack
 
@@ -87,7 +86,7 @@ Docs Markdown のメニューにアクセスするには、「`ALT+M`」と入�
 
 ## <a name="known-issues"></a>既知の問題
 
-- [DocFX Preview] MacOS および Linux: DocFX Preview でプレビューが正しく起動しない (これらのプラットフォームではプレビューは既定で VS Code Markdown プレビューになります)。
-- [DocFx Preview] すべてのプラットフォーム: API への xref (相互参照) リンクなどの一部の構文が、プレビューで正しくレンダリングされない。場合によってはコンテンツ ページが閉じる。
-- [外部ブックマーク] Linux: ファイル リストが表示されるが、見出しが表示されない。
-- [含む] Linux: ファイル リストが表示されるが、選択を行った後でリンクが追加されない。
+- DocFX Preview: MacOS および Linux: DocFX Preview でプレビューが正しく起動しない (これらのプラットフォームではプレビューは既定で VS Code Markdown プレビューになります)。
+- DocFx Preview: すべてのプラットフォームで API への xref (相互参照) リンクなどの一部の構文が、プレビューで正しくレンダリングされない。場合によってはコンテンツ ページが閉じる。
+- 外部ブックマーク: Linux でファイル リストが表示されるが、見出しが表示されない。
+- 含む: Linux でファイル リストが表示されるが、選択を行った後でリンクが追加されない。

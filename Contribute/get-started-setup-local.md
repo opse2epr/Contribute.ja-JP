@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>ドキュメントの Git リポジトリをローカルに設定する
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 > * アップストリームのリモート値を構成する
 
 > [!IMPORTANT]
-> 記事に軽微な変更しか加えていない場合は、この記事の手順を完了する必要*はありません*。 [軽微な/低頻度の変更のワークフロー](light-workflow.md)に直接進むことができます。
+> 記事に軽微な変更しか加えていない場合は、この記事の手順を完了する必要*はありません*。 [簡易的な変更のワークフロー](index.md#quick-edits-to-existing-documents)に直接進むことができます。
 >
 
 ## <a name="overview"></a>概要
@@ -46,7 +46,7 @@ GitHub を初めて使用する場合は、次のビデオを視聴して、フ�
 
 1. 使用するリポジトリが不明な場合は、Web ブラウザーを使用して docs.microsoft.com 上の記事にアクセスします。 記事の右上にある **[編集]** リンク (鉛筆のアイコン) を選択します。
 
-   ![[編集] をクリックしてリポジトリとファイルの場所を特定します。](media/edit-article.png)
+   ![[編集] をクリックしてリポジトリとファイルの場所を特定します。](media/index/edit-article.png)
 
 2. このリンクでは、適切なリポジトリ内の対応するマークダウン ファイルがある github.com の場所に移動します。 リポジトリ名を表示するための URL にご注意ください。
 
