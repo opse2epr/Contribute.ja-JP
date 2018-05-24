@@ -9,10 +9,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
-ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
+ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>VS Code 用 Docs Authoring Pack
 
@@ -80,7 +80,7 @@ Docs Markdown のメニューにアクセスするには、「`ALT+M`」と入�
 
 "Gauntlet" という名前の拡張コードの以前のユーザーは、Docs Markdown 拡張機能がインストールされたときに VS Code ウィンドウの下部にオーサリング ツールバーが表示されなくなったことに気付くでしょう。 これは、ツールバーが VS Code ステータス バー上で多くの領域を使用し、拡張機能のユーザー エクスペリエンスのベスト プラクティスに従っていなかったために新しい拡張機能で非推奨になったためです。 しかし、オプションで VS Code の settings.json ファイルを次のように更新することでツールバーを表示できます。
 
-1. VS Code で、[ファイル]、[基本設定]、[設定] (`CTRL+Comma`) の順に選択します。
+1. VS Code で、[ファイル]、[基本設定]、[設定]、 (`CTRL+Comma`) の順に選択します。
 1. [ユーザー設定] を選択してすべての VS Code ワークスペースの設定を変更するか、[ワークスペースの設定] を選択して、現在のワークスペースのみの設定を変更します。
 1. [既定の設定] ウィンドウで、[Docs Authoring Extension Configuration]\(Docs Authoring 拡張機能の構成\) を見つけ、目的の設定の横にある鉛筆アイコンを選択します。 次に、`true` または `false` を選択するように指示されます。 選択すると、VS Code によって settings.json ファイルに自動的に値が追加され、変更を有効にするためにウィンドウを再び読み込むように指示されます。
 
