@@ -8,17 +8,22 @@ ms.date: 07/13/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 96d00abc052c3b23ca62201dccdbe590a927e72d
-ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
+ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>ドキュメントを記述するための Markdown の使用方法
 
 docs.microsoft.com の記事は [Markdown](https://daringfireball.net/projects/markdown/) という読みやすく、しかも簡単に学べる軽量マークアップ言語で記述されます。 そのため、これは急速に業界標準になりました。
 
-Docs のコンテンツは GitHub に格納されるので、[GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) と呼ばれる Markdown の上位セットを使用できます。GFM は一般的な書式要件のための追加機能を提供します。 さらに、Open Publishing Services (OPS) は DocFX Flavored Markdown (DFM) を実装しています。 DFM は GitHub Flavored Markdown (GFM) との互換性が高く、Docs 固有の機能を実現するための機能を提供します。
+Docs のコンテンツは GitHub に格納されるので、[GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) と呼ばれる Markdown の上位セットを使用できます。GFM は一般的な書式要件のための追加機能を提供します。 さらに、Open Publishing Services (OPS) は Markdown パーサー Markdig を実装しています。 Markdig は GitHub Flavored Markdown (GFM) との互換性が高く、Docs 固有の機能を実現するための機能を提供します。
+
+* Markdig は高速で、強力で、CommonMark に準拠した、.NET 向けの拡張可能なマークダウン プロセッサーです。
+* https://github.com/lunet-io/markdig
+* 優れたコミュニティ サポート
+* 優れた標準サポート
 
 ## <a name="markdown-basics"></a>Markdown の基本
 
@@ -145,7 +150,7 @@ Markdown の基本仕様には表が含まれていませんが、GFM が表を�
 
 表作成の詳細については、以下の情報源をご覧ください。
 
-- 横に長い表の書式設定に役立つ、DFM の「[表を折り返す機能](#table-wrapping)」
+- 横に長い表の書式設定に役立つ、Markdig の「[表を折り返す機能](#table-wrapping)」
 - GitHub の「[Organizing information with tables (表を使用した情報の整理)](https://help.github.com/articles/organizing-information-with-tables/)」
 - [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) Web アプリ
 - Adam Pritchard 氏の「[Markdown Cheatsheet (Markdown に関する簡易参照ガイド)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)」
@@ -161,7 +166,7 @@ Markdown の基本仕様には表が含まれていませんが、GFM が表を�
 リンクの詳細については、以下の情報源をご覧ください。
 
 - Markdown のリンクの基本的なサポートについては、[Markdown の構文](https://daringfireball.net/projects/markdown/syntax#link)に関するセクション。
-- DFM で提供されるその他のリンク構文の詳細については、このガイドの「[リンク](how-to-write-links.md)」セクション。
+- Markdig で提供されるその他のリンク構文の詳細については、このガイドの[リンク](how-to-write-links.md)に関するセクション。
 
 ### <a name="code-snippets"></a>コード スニペット
 
@@ -272,9 +277,9 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>OPS による Markdown のカスタム拡張機能
 
 > [!NOTE]
-> Open Publishing Services (OPS) は GitHub Flavored Markdown (GFM) との互換性が高い DocFX Flavored Markdown (DFM) を実装しています。 DFM は Markdown 拡張機能を介していくつかの機能を追加しています。 そのため、完全版の「OPS Authoring Guide」 (OPS オーサリング ガイド) の一部の記事は、参考のためにこのガイドに含まれています  (たとえば、目次の「Markdown の概要」と「コード スニペット」をご覧ください)。
+> Open Publishing Services (OPS) は GitHub Flavored Markdown (GFM) との互換性が非常に高い Markdown パーサー Markdig を実装しています。 Markdig は Markdown 拡張機能を介していくつかの機能を追加しています。 そのため、完全版の「OPS Authoring Guide」 (OPS オーサリング ガイド) の一部の記事は、参考のためにこのガイドに含まれています  (たとえば、目次の「Markdig and Markdown extensions」(Markdig と Markdown の拡張機能) と「Code snippets」(コード スニペット) をご覧ください)。
 
-Docs 記事では、段落、リンク、リスト、見出しなど、ほとんどの書式設定に GFM が使用されます。 記事の高度な書式設定には、次のような DFM 機能を使用できます。
+Docs 記事では、段落、リンク、リスト、見出しなど、ほとんどの書式設定に GFM が使用されます。 記事の高度な書式設定には、次のような Markdig 機能を使用できます。
 
 - 注ブロック
 - インクルード
@@ -282,7 +287,7 @@ Docs 記事では、段落、リンク、リスト、見出しなど、ほとん
 - 埋め込みビデオ
 - コード スニペット/サンプル
 
-完全なリストについては、目次の「Markdown の概要」と「コード スニペット」をご覧ください。
+完全なリストについては、目次の「Markdig and Markdown extensions」(Markdig と Markdown の拡張機能) と「Code snippets」(コード スニペット) をご覧ください。
 
 ### <a name="note-blocks"></a>注ブロック
 
@@ -297,7 +302,7 @@ Docs 記事では、段落、リンク、リスト、見出しなど、ほとん
 
 ### <a name="includes"></a>インクルード
 
-再利用可能なテキスト ファイルまたはイメージ ファイルを記事ファイルにインクルードする必要がある場合は、DFM のファイル インクルード機能を使用して "インクルード" ファイルを参照できます。 この機能は、ビルド時に特定のファイルを記事ファイルにインクルードするように OPS に指示します。これにより、その指定されたファイルは公開記事に含まれるようになります。 コンテンツの再利用に役立つ 3 つのタイプのインクルードがあります。
+再利用可能なテキスト ファイルまたはイメージ ファイルを記事ファイルにインクルードする必要がある場合は、Markdig のファイル インクルード機能を使用して "インクルード" ファイルを参照できます。 この機能は、ビルド時に特定のファイルを記事ファイルにインクルードするように OPS に指示します。これにより、その指定されたファイルは公開記事に含まれるようになります。 コンテンツの再利用に役立つ 3 つのタイプのインクルードがあります。
 
 - インライン: 一般的なテキスト スニペットを別の文中にインラインで再利用できます。
 - ブロック: Markdown ファイル全体をブロックとして再利用し、記事のセクション内にネストできます。
@@ -309,7 +314,7 @@ Docs 記事では、段落、リンク、リスト、見出しなど、ほとん
 
 - 複数の記事に同じテキストを表示する必要があるときには、インクルードを使用してください。
 - ブロックによるインクルードは、1 つまたは 2 つの段落、共通の手順、共通のセクションといった分量の多いコンテンツに使用してください。 1 つの文よりも小さい場合には、使用しないでください。
-- インクルードは DFM 拡張機能に依存するため、GitHub がレンダリングした記事にインクルードはレンダリングされません。 公開後にのみレンダリングされます。
+- インクルードは Markdig 拡張機能に依存するため、GitHub がレンダリングした記事にインクルードはレンダリングされません。 公開後にのみレンダリングされます。
 - インクルード内のすべてのテキストの記述には、インクルードを参照する記事内の先行テキストや後続テキストに依存しない完全な文または語句を使用してください。 このガイダンスを無視すると、ローカライズされたエクスペリエンスを乱す翻訳不可能な文字列が記事内に発生します。
 - インクルードをほかのインクルード内に埋め込まないでください。 それはサポートされていません。
 - メディア ファイルは、インクルードのサブディレクトリ内にあるメディア フォルダーに配置する必要があります。たとえば、`<repo>`/includes/media フォルダーです。 メディア ディレクトリのルートにはイメージを配置しないでください。 イメージがないインクルードの場合は、対応するメディア ディレクトリは不要です。
@@ -318,13 +323,13 @@ Docs 記事では、段落、リンク、リスト、見出しなど、ほとん
 
 ### <a name="selectors"></a>セレクター
 
-同じ技術記事の複数のバージョンを記述するときには、複数のテクノロジまたはプラットフォームの実装の違いに対応するために、セレクターを使用します。 通常、これが最も当てはまるのは、Microsoft の開発者向けのモバイル プラットフォームのコンテンツです。 現在 DFM にはシングル セレクターとマルチ セレクターという 2 つのタイプのセレクターがあります。
+同じ技術記事の複数のバージョンを記述するときには、複数のテクノロジまたはプラットフォームの実装の違いに対応するために、セレクターを使用します。 通常、これが最も当てはまるのは、Microsoft の開発者向けのモバイル プラットフォームのコンテンツです。 現在 Markdig にはシングル セレクターとマルチ セレクターという 2 つのタイプのセレクターがあります。
 
 選択範囲内の各記事に配置されるセレクター Markdown は同じであるため、記事のセレクターをインクルードに配置することをお勧めします。 そのうえで、同じセレクターを使用するすべての記事でそのインクルードを参照できます。
 
 ### <a name="code-snippets"></a>コード スニペット
 
-DFM では、コード スニペット拡張機能を使用した記事へのコードの高度なインクルードがサポートされます。 プログラミング言語の選択や構文の色分けといった GFM 機能に基づく高度なレンダリングに加えて、次のような便利な機能を使用できます。
+Markdig では、コード スニペット拡張機能を使用した記事へのコードの高度なインクルードがサポートされます。 プログラミング言語の選択や構文の色分けといった GFM 機能に基づく高度なレンダリングに加えて、次のような便利な機能を使用できます。
 
 - 外部リポジトリから集められたコード サンプル/スニペットのインクルード。
 - さまざまな言語でのさまざまなバージョンのコード サンプルをタブに表示する UI。
