@@ -9,14 +9,15 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
-ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469580"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>VS Code 用 Docs Authoring Pack
 
-Docs Authoring Pack は、docs.microsoft.com の Markdown の作成を支援する VS Code 拡張機能の集まりです。このパックは、[VS Code Marketplace で入手可能であり](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)、次の拡張機能を含んでいます。
+Docs Authoring Pack は、docs.microsoft.com の Markdown の作成を支援する VS Code 拡張機能の集まりです。 このパックは、[VS Code Marketplace で入手可能であり](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)、次の拡張機能を含んでいます。
 
 - **DocFx:** docs.microsoft.com 固有の Markdown のプレビューを含んでいます。 詳細については、[DocFx](https://marketplace.visualstudio.com/items?itemName=ms-docfx.DocFX) を参照してください。
 - **markdownlint:** David Anson 氏による人気のある Markdown リンターで、ベスト プラクティスに従った Markdown を作成するために役立ちます。 詳細については、[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) を参照してください。

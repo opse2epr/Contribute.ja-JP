@@ -9,14 +9,15 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469396"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>ドキュメント スタイルとボイスのクイック スタート
 
-このクイック スタートを使用すると、docs.microsoft.com の記事を記述するにあたって最も重要な Docs スタイルの概念を適用する方法が、最小限の時間で十分に理解できます。これらのガイドラインは、新しいドキュメントを作成する場合にも、既存のドキュメントを更新する場合にも適用されます。
+このクイック スタートを使用すると、docs.microsoft.com の記事を記述するにあたって最も重要な Docs スタイルの概念を適用する方法が、最小限の時間で十分に理解できます。 これらのガイドラインは、新しいドキュメントを作成する場合にも、既存のドキュメントを更新する場合にも適用されます。
 
 最低限の作業として、次のことを行ってください。
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 05/22/2018
 
 ## <a name="use-the-microsoft-voice-principles"></a>Microsoft のボイスの原則の使用
 
-[docs.microsoft.com](https://docs.microsoft.com) の技術コンテンツを記述する場合は、次の原則に従うことが求められます。常に達成できるわけではありませんが、努力し続けることが必要です。
+[docs.microsoft.com](https://docs.microsoft.com) の技術コンテンツを記述する場合は、次の原則に従うことが求められます。 常に達成できるわけではありませんが、努力し続けることが必要です。
 
 - **目的に焦点を合わせる**: Microsoft のドキュメントを参照するお客様には、はっきりとした目的があります。 記述を始める前に、対象のお客様とそのお客様が実行しようとしているタスクを明確にします。 次に、その特定のお客様が、その特定のタスクを実行するのに役立つ記事を記述します。
 - **一般的な用語を使用する**: 自然言語、ユーザーが使う単語を使用してください。 技術レベルは落とさずに、堅苦しくない言葉を使います。 新しい概念を説明する場合は例を示します。
