@@ -1,19 +1,13 @@
 ---
 title: ドキュメントでのリンクの使用方法
 description: この記事では、docs.microsoft.com 内でのコンテンツへのリンクの作成に関するガイドを提供します。
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469534"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239728"
 ---
 # <a name="using-links-in-documentation"></a>ドキュメントでリンクを使用する
 この記事では、docs.microsoft.com でホストされたページからハイパーリンクを使用する方法について説明します。 いくつかの規則が変更されていますが、リンクは Markdown に簡単に追加できます。 リンクは、同じページ内のコンテンツをポイントするか、他の近くにあるページ内をポイントするか、外部のサイトや URL をポイントすることができます。
@@ -63,7 +57,10 @@ docs.microsoft.com サイトは、DocFX Flavored Markdown (DFM) を実装する 
   `[link text](../directory/article-name.md)`
 
 - docset 間の記事のリンク (同じリポジトリ内の場合でも): `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> 上記の例で `~/` をリンクの一部としているのはありません。 リポジトリのルートにあるパスにリンクするには、`/` から始めます。 GitHub のソース リポジトリを移動するときに `~/` が生成する無効なリンクを含みます。 `/` が正しく解決するパスから始めます。
+
 ## <a name="links-to-anchors"></a>アンカーへのリンク
 
 アンカーを作成する必要はありません。 アンカーは、公開時に、すべての H2 見出しについて自動的に生成されます。 唯一行う必要がある処理は、H2 セクションへのリンクを作成することです。
