@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239771"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251429"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 共同作成者ガイド概要
 
 [docs.microsoft.com](https://docs.microsoft.com) (Docs) 共同作成者ガイドへようこそ。
 
-Microsoft のドキュメント セットには、GitHub でホストされているオープン ソースのものがあります。 多くのチームが頻繁にこのモデルを採用しています。 プル要求を作成するために招待された場合、完全にオープン ソースでないドキュメント セットでも一般公開用のリポジトリがあります。 これを使用すると、製品エンジニア、コンテンツ チーム、顧客との間のコミュニケーションが効率化され改善されます。 オープン環境で作業すると、次のようないくつかの利点があります。
+Microsoft のドキュメント セットには、GitHub でホストされているオープン ソースのものがあります。 Microsoft の多くのチームが頻繁にこのモデルを採用しています。 プル要求を作成するために招待された場合、完全にオープン ソースでないドキュメント セットでも一般公開用のリポジトリがあります。 これを使用すると、製品エンジニア、コンテンツ チーム、顧客との間のコミュニケーションが効率化され改善されます。 オープン環境で作業すると、次のようないくつかの利点があります。
 
 - 最も必要なドキュメントに関するフィードバックを取得するために、開かれたオープン ソースのリポジトリのプラン。
 - 最初のリリースで最も役立つコンテンツを公開するために、開かれたオープン ソースのリポジトリのレビュー。

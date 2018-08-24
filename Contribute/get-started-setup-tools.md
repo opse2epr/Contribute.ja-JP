@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238922"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251465"
 ---
 # <a name="install-content-authoring-tools"></a>コンテンツ オーサリング ツールのインストール
 
 この記事では、Git クライアント ツールと Visual Studio Code を対話形式でインストールする手順について説明します。
 > [!div class="checklist"]
-> * [Git for Windows](https://git-scm.com/download/win) をインストールする
+> * [Git](https://git-scm.com/) をインストールする
 > * [Visual Studio Code](https://code.visualstudio.com/) をインストールする
 > * [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) をインストールする
 
@@ -25,9 +25,13 @@ ms.locfileid: "36238922"
 >
 > 大規模な変更を行う共同作成者は、これらの手順を実行することをお勧めします。そうすることで、[大規模/長期間の変更のワークフロー](how-to-write-workflows-major.md)を使用できるようになります。 メイン リポジトリで書き込みアクセス許可を持っている場合でも、"*リポジトリのフォークと複製を行うことを強くお勧めします (本ガイドでもそれを前提としています)*"。それにより、予定している変更をフォークに保存するための読み取り/書き込み権限が付与されます。
 
-## <a name="install-git-client-tools-on-windows"></a>Git クライアント ツールを Windows にインストールする
+## <a name="install-git-client-tools"></a>Git クライアント ツールのインストール 
 
- [Software Freedom Conservancy の Git クライアント ツール](https://git-scm.com/download/)の最新バージョンをインストールします。 インストールには、Git バージョン管理システムや、ローカル Git リポジトリとの対話で使用するコマンドライン アプリである Git Bash が含まれます。
+ プラットフォーム用の [Software Freedom Conservancy の Git クライアント ツール](https://git-scm.com/download/)の最新バージョンをインストールします。 
+
+* [Git for Windows](https://git-scm.com/download/win)。 このインストールには、Git バージョン管理システムや、ローカル Git リポジトリとの対話で使用するコマンドライン アプリである Git Bash が含まれます。
+* Mac 用の Git は Xcode コマンド ライン ツールの一部として提供されます。 コマンド ラインから単純に `git` を実行します。 必要に応じて、コマンド ライン ツールのインストールを求められます。 また、Software Freedom Conservancy から [Mac 用の Git](https://git-scm.com/download/mac) をダウンロードすることもできます。
+* [Linux と Unix 用の Git](https://git-scm.com/download/linux)
 
 コマンド ライン インターフェイス (CLI) ではなくグラフィカル ユーザー インターフェイス (GUI) を使用する場合は、[Software Freedom Conservancy の使用可能な GUI クライアントに関するページ](https://git-scm.com/downloads/guis)、[GitHub の GitHub デスクトップ](https://desktop.github.com/)に関するページ、[Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx) のページで、一部の一般的なオプションを確認してください。
 

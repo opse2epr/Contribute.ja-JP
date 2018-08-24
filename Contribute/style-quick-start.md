@@ -2,22 +2,22 @@
 title: ドキュメント スタイル ガイド - クイック スタート
 description: この記事は、docs.microsoft.com を開始するにあたって不可欠なトピックを含む、スタイルで考慮すべき事項についての簡潔なガイドです。
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239605"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243025"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>ドキュメント スタイルとボイスのクイック スタート
 
-このクイック スタートを使用すると、docs.microsoft.com の記事を記述するにあたって最も重要な Docs スタイルの概念を適用する方法が、最小限の時間で十分に理解できます。 これらのガイドラインは、新しいドキュメントを作成する場合にも、既存のドキュメントを更新する場合にも適用されます。
+このクイック スタートは、技術的なコンテンツを記述して docs.microsoft.com 上で公開するための簡単なガイドです。 これらのガイドラインは、新しいドキュメントを作成する場合にも、既存のドキュメントを更新する場合にも適用されます。
 
-最低限の作業として、次のことを行ってください。
+ベスト プラクティス:
 
 - Word へのコピーと貼り付けが必要な場合でも、記事のスペルと文法を確認します。
 - 他の人と 1 対 1 で話している時のような、カジュアルでフレンドリなボイスを使用します。
-- シンプルな文を使用します。 わかりやすく、翻訳者と機械翻訳のどちらでも翻訳しやすいようにします。
+- シンプルな文を使用します。 読みやすい文章とは、自分が公開するガイダンスを読者がすぐに使用できるということです。
 
 ## <a name="use-the-microsoft-voice-principles"></a>Microsoft のボイスの原則の使用
 
