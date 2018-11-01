@@ -2,12 +2,12 @@
 title: ドキュメント スタイル ガイド - クイック スタート
 description: この記事は、docs.microsoft.com を開始するにあたって不可欠なトピックを含む、スタイルで考慮すべき事項についての簡潔なガイドです。
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805584"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>ドキュメント スタイルとボイスのクイック スタート
 
@@ -51,5 +51,5 @@ Microsoft の技術的記事はいくつかの言語に翻訳されています�
 
 - ローカライズされたドキュメントの作成に協力する場合は、「[Microsoft ランゲージ ポータル](https://www.microsoft.com/Language/Default.aspx)」を参照してください。
 - ローカライズのガイドライン、技術的パブリケーションでの言語のスタイルと用法に関する情報、および市場固有のデータ形式に関する情報については、お使いの言語で[スタイル ガイド](https://www.microsoft.com/Language/StyleGuides)をダウンロードしてください。
-- Microsoft のローカライズされた用語については、[製品固有の承認済み用語](https://www.microsoft.com/Language/Default.aspx)を検索するか、お使いの言語で [Microsoft 用語集](https://www.microsoft.com/Language/Terminology.aspx)をダウンロードしてください。
+- Microsoft のローカライズされた用語については、[製品固有の承認済み用語](https://www.microsoft.com/Language/Default.aspx)を検索するか、お使いの言語で [Microsoft 用語集](https://www.microsoft.com/language/Terminology)をダウンロードしてください。
 - ローカライズについて詳しくは、[Microsoft Writing Style Guide (Microsoft ライティング スタイル ガイド)](https://docs.microsoft.com/style-guide/global-communications) の「Global communications」(グローバル コミュニケーション) をご覧ください。
