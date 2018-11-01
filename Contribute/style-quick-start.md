@@ -2,12 +2,12 @@
 title: ドキュメント スタイル ガイド - クイック スタート
 description: この記事は、docs.microsoft.com を開始するにあたって不可欠なトピックを含む、スタイルで考慮すべき事項についての簡潔なガイドです。
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243025"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084401"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>ドキュメント スタイルとボイスのクイック スタート
 
@@ -15,7 +15,7 @@ ms.locfileid: "40243025"
 
 ベスト プラクティス:
 
-- Word へのコピーと貼り付けが必要な場合でも、記事のスペルと文法を確認します。
+- Microsoft Word にコピーと貼り付けを行ってチェックする必要がある場合でも、記事のスペルと文法をチェックしてください。
 - 他の人と 1 対 1 で話している時のような、カジュアルでフレンドリなボイスを使用します。
 - シンプルな文を使用します。 読みやすい文章とは、自分が公開するガイダンスを読者がすぐに使用できるということです。
 
@@ -45,11 +45,11 @@ Microsoft の技術的記事はいくつかの言語に翻訳されています�
 - コード スニペットを含むステップでは、ステップに関する追加情報をコメントとしてコードの中に入れます。 これによって、ユーザーが読む必要があるテキストの全体量が減ります。 また、重要な情報がコード プロジェクトにコピーされることで、ユーザーが後で参照するときにコードの実行内容を思い出せます。
 - すべてのタイトルと見出しでは、文頭のみを大文字にします。
 - "ログイン" ではなく "サインイン" を使用します。
-- リストまたはコード スニペットの前にあるすべての文に、"次の" または "次のように" という語句を含めます。
+- 詳細なガイドラインについては、[Microsoft Writing Style Guide (Microsoft ライティング スタイル ガイド)](https://docs.microsoft.com/style-guide/welcome) をご覧ください。
 
 ## <a name="localized-documentation"></a>ローカライズされたドキュメント
 
 - ローカライズされたドキュメントの作成に協力する場合は、「[Microsoft ランゲージ ポータル](https://www.microsoft.com/Language/Default.aspx)」を参照してください。
 - ローカライズのガイドライン、技術的パブリケーションでの言語のスタイルと用法に関する情報、および市場固有のデータ形式に関する情報については、お使いの言語で[スタイル ガイド](https://www.microsoft.com/Language/StyleGuides)をダウンロードしてください。
 - Microsoft のローカライズされた用語については、[製品固有の承認済み用語](https://www.microsoft.com/Language/Default.aspx)を検索するか、お使いの言語で [Microsoft 用語集](https://www.microsoft.com/Language/Terminology.aspx)をダウンロードしてください。
-- Microsoft のスタイル ガイドの「[ローカライズ セクション](https://docs.microsoft.com/style-guide/global-communications/)」をご覧ください。
+- ローカライズについて詳しくは、[Microsoft Writing Style Guide (Microsoft ライティング スタイル ガイド)](https://docs.microsoft.com/style-guide/global-communications) の「Global communications」(グローバル コミュニケーション) をご覧ください。
