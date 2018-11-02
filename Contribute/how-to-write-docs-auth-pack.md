@@ -1,20 +1,19 @@
 ---
-title: VS Code 用 Docs Authoring Pack
-description: この記事では、docs.microsoft.com の Markdown の作成を促進する VS Code 拡張パックについて説明します。
+title: Visual Studio Code 用の Docs Authoring Pack
+description: この記事では、docs.microsoft.com の Markdown の作成を促進する Visual Studio Code 拡張パックについて説明します。
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805656"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>VS Code 用 Docs Authoring Pack
 
-Docs Authoring Pack は、docs.microsoft.com の Markdown の作成を支援する VS Code 拡張機能の集まりです。 このパックは、[VS Code Marketplace で入手可能であり](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)、次の拡張機能を含んでいます。
+Docs Authoring Pack は、docs.microsoft.com の Markdown の作成を支援する Visual Studio Code 拡張機能の集まりです。 このパックは、[VS Code Marketplace で入手可能であり](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)、次の拡張機能を含んでいます。
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint): David Anson 氏による人気のある Markdown リンターで、ベスト プラクティスに従った Markdown を作成するために役立ちます。
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Street Side Software による、完全にオフラインのスペル チェック機能です。
@@ -103,7 +102,7 @@ Templates 拡張機能では、3 つの動的メタデータ フィールド (au
 |----------|---------------|
 |author    |GitHub ID (VS Code の設定ファイルで指定している場合)。|
 |ms.author |Microsoft のエイリアス (VS Code の設定ファイルで指定している場合)。 Microsoft の従業員ではない場合は、指定しないままにします。|
-|ms.date   |Docs サポート形式 (MM/DD/YYYY) での現在の日付。 後でファイルを更新しても、日付は自動で更新されないことに注意してください。記事の更新日を示すためには、手動で日付を更新する必要があります。|
+|ms.date   |Docs サポート形式 (MM/DD/YYYY) での現在の日付。 後でファイルを更新する場合、日付は自動的に更新されないことにご注意ください。 docs.microsoft.com サイトでの最も新しい発行日を示すように ms.date 値を手動で更新する必要があります。|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>author (GitHub ID) や ms.author (Microsoft のエイリアス) を設定する
 

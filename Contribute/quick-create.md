@@ -8,12 +8,12 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805748"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>クイック スタート: Azure Key Vault でのシークレットの設定と取得
 
@@ -30,16 +30,19 @@ ms.locfileid: "43308826"
 先に進む前に、[基本的な概念](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts)を理解しておいてください。
 
 > [!NOTE]
-> 下記のチュートリアルがベスト プラクティスである理由を理解するには、いくつかの概念を理解する必要があります。 Key Vault は、プログラムでシークレットを格納できる中央リポジトリです。 しかしこれを実行するには、アプリケーション/ユーザーが最初に Key Vault に対する認証を行う (シークレットを提示する) 必要があります。 セキュリティのベスト プラクティスに従うために、最初のシークレットのローテーションが定期的に行われる必要もあります。 しかし、Azure で実行される[マネージド サービス ID](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) アプリケーションでは、Azure によって自動で管理される ID が提供されます。 これにより、**シークレット導入問題**が解決されます。ユーザー/アプリケーションはベスト プラクティスに従うことができ、最初のシークレットのローテーションについて心配する必要がありません
+> 下記のチュートリアルがベスト プラクティスである理由を理解するには、いくつかの概念を理解する必要があります。 Key Vault は、プログラムでシークレットを格納できる中央リポジトリです。 しかしこれを実行するには、アプリケーション/ユーザーが最初に Key Vault に対する認証を行う (シークレットを提示する) 必要があります。 セキュリティのベスト プラクティスに従うために、最初のシークレットのローテーションが定期的に行われる必要もあります。 しかしながら、Azure で実行される[マネージド サービス ID](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) アプリケーションでは、Azure によって自動で管理される ID が提供されます。 これにより、**シークレット導入問題**が解決されます。ユーザー/アプリケーションはベスト プラクティスに従うことができ、最初のシークレットのローテーションについて心配する必要がありません
 
 ## <a name="prerequisites"></a>前提条件
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node JS](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * 次のワークロードでは [Visual Studio 2017 バージョン 15.7.3 以降](https://www.microsoft.com/net/download/windows)。
   * ASP.NET および Web の開発
   * .NET Core クロスプラットフォームの開発
-* [.NET Core 2.1 SDK 以降](https://www.microsoft.com/net/download/windows) :::zone-end
+* [.NET Core 2.1 SDK 以降](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git ([ダウンロード](https://git-scm.com/downloads))。
 * Azure サブスクリプション。 Azure サブスクリプションをお持ちでない場合は、開始する前に[無料アカウント](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)を作成してください。
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) バージョン 2.0.4 以降。 これは、Windows、Mac、Linux に対応しています。
@@ -110,7 +113,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>依存関係をインストールする
 
-ここで依存関係をインストールします。 コマンド cd key-vault-node-quickstart npm install を実行します。
+ここで依存関係をインストールします。 次のコマンドを実行します。
+
+    cd key-vault-node-quickstart
+    npm install
 
 このプロジェクトでは、次の 2 つのノード モジュールを使用しました。
 
@@ -119,14 +125,14 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="publish-the-web-application-to-azure"></a>Azure に Web アプリケーションを発行する
 
-以下に示したいくつかの手順を実行する必要があります。
+アプリケーションを Azure に発行するために必要な手順は次のようになります。
 
 * 1 つ目の手順は、[Azure App Service](https://azure.microsoft.com/services/app-service/) プランの作成です。 このプランには複数の Web アプリを格納することができます。
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* 次に、Web アプリを作成します。 次の例では、<app_name> をグローバルに一意のアプリ名に置き換えてください (有効な文字は a-z、0-9、-)。 ランタイムは NODE|6.9 に設定されています。 サポートされているすべてのランタイムを確認するには、az webapp list-runtimes を実行します。
+* 次に、Web アプリを作成します。 次の例では、<app_name> をグローバルに一意のアプリ名に置き換えてください (有効な文字は a-z、0-9、-)。 ランタイムは NODE|6.9 に設定されています。 サポートされているすべてのランタイムを確認するには、`az webapp list-runtimes` を実行します。
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -238,7 +244,8 @@ git push azure master
 
 ::: zone-end
 
-::: zone pivot="dotnet" これで、アプリケーションを実行すると、取得されたシークレットの値が表示されます。
+::: zone pivot="dotnet"
+これで、アプリケーションを実行すると、取得されたシークレットの値が表示されます。
 ::: zone-end
 
 ## <a name="next-steps"></a>次のステップ
@@ -247,10 +254,12 @@ git push azure master
 * [Azure Key Vault のホーム ページ](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault のドキュメント](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK For Node](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [Azure REST API リファレンス](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure REST API リファレンス](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Azure Key Vault のホーム ページ](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault のドキュメント](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net)
-* [Azure REST API リファレンス](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure REST API リファレンス](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

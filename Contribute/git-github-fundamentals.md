@@ -2,12 +2,12 @@
 title: Git および GitHub のドキュメントの基礎
 description: この記事では、Git、GitHub リポジトリの概要、コンテンツの編成、docs.microsoft.com で使用される命名規則について説明します。
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805702"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git および GitHub のドキュメントの基礎
 
@@ -31,7 +31,7 @@ GitHub は、[docs.microsoft.com](https://docs.microsoft.com) コンテンツの
 共同作成者は以下の方法で Git と対話して、ローカル レベルと GitHub レベルの両方でリポジトリを更新および処理します。
 
 - ローカルでは、ローカル リポジトリの管理や GitHub リポジトリとの通信のための Git のコマンドをサポートするツール (Git Bash コンソールなど) を利用します。
-- Git を統合する [www.github.com](https://www.github.com) を利用して、メイン リポジトリに戻される共同作成の整合を管理します
+- Git を統合する [www.github.com](https://www.github.com) を利用して、メイン リポジトリに戻される共同作成の整合を管理します。
 
 ## <a name="github"></a>GitHub
 
@@ -46,7 +46,7 @@ GitHub は、[docs.microsoft.com](https://docs.microsoft.com) コンテンツの
 
 前述のとおり、プロジェクトの既定/マスター ブランチは、プロジェクト コンテンツの最新バージョンとして機能します。 マスター ブランチ (およびマスター ブランチから作成されたブランチ) のコンテンツは、対応する Docs ページの記事の組織と大まかに一致します。 お気に入りコンテンツ (サービスなど)、メディア コンテンツ (イメージ ファイルなど)、および "インクルード" ファイル (コンテンツの再利用を可能にする) を分離するために、サブディレクトリが使用されます。
 
-通常、メイン `articles` ディレクトリはリポジトリのルートの直下にあります。 記事のディレクトリには一連のサブディレクトリが含まれます。 サブディレクトリ内の記事は、*.md* 拡張子を使用する Markdown ファイルとして書式設定されます。 複数のサービスをサポートするリポジトリでは、共通の `/articles` サブディレクトリが使用されることがあります。たとえば、[https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs) リポジトリです。 サービス固有の名前が使用される場合もあります。たとえば、[https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) リポジトリでは `/IntuneDocs` が使用されます。
+通常、メイン `articles` ディレクトリはリポジトリのルートの直下にあります。 記事のディレクトリには一連のサブディレクトリが含まれます。 サブディレクトリ内の記事は、*.md* 拡張子を使用する Markdown ファイルとして書式設定されます。 複数のサービスをサポートするリポジトリでは、共通の `/articles` サブディレクトリが使用されることがあります。たとえば、[Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs) リポジトリです。 サービス固有の名前が使用される場合もあります。たとえば、[IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs) リポジトリでは `/IntuneDocs` が使用されます。
 
 このディレクトリのルートには、サービスまたは製品全体に関する記事全般があります。 通常ではその他に、機能/サービスまたは共通のシナリオに対応する一連のサブディレクトリがあります。 たとえば、Azure の "仮想マシン" に関する記事はサブディレクトリ `/virtual-machines` にあり、Intune の "理解と探索" に関する記事はサブディレクトリ `/understand-explore` にあります。
 

@@ -3,14 +3,13 @@ title: ローカルでの Git リポジトリの設定
 description: この記事では、フォークや複製のプロセスなど、ローカル Git リポジトリの作成およびドキュメントへの投稿方法に関するガイダンスを示します。
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805679"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>ドキュメントの Git リポジトリをローカルに設定する
 
@@ -30,7 +29,7 @@ ms.locfileid: "36238991"
 
 ## <a name="overview"></a>概要
 
-Microsoft のドキュメント サイトに投稿するには、対応するドキュメント リポジトリを複製して、マークダウン ファイルをローカルで作成および編集します。 Microsoft では、github アカウントに適切なリポジトリをフォークすることを要求しています。それにより、予定している変更を保存するための読み取り/書き込み権限が付与されます。 その後、プル要求を使用して、変更を読み取り専用の一元的な共有リポジトリにマージします。
+Microsoft のドキュメント サイトに投稿するには、対応するドキュメント リポジトリを複製して、マークダウン ファイルをローカルで作成および編集します。 Microsoft では、GitHub アカウントに適切なリポジトリをフォークすることを要求しています。それにより、予定している変更を保存するための読み取り/書き込み権限が付与されます。 その後、プル要求を使用して、変更を読み取り専用の一元的な共有リポジトリにマージします。
 
 ![GitHub の三角形](./media/git-and-github-initial-setup.png)
 
@@ -60,7 +59,7 @@ GitHub を初めて使用する場合は、次のビデオを視聴して、フ�
 ## <a name="fork-the-repository"></a>リポジトリのフォーク
 適切なリポジトリを使用し、GitHub Web サイトで GitHub アカウントにリポジトリのフォークを作成します。
 
-すべてのメイン ドキュメント リポジトリでは、読み取り専用アクセスが提供され、つまり、リポジトリのコンテンツを直接変更することはできないので、個人用のフォークが必要です。 変更するには、自分のフォークからメイン リポジトリに[プル要求](git-github-fundamentals.md#pull-requests)を送信する必要があります。 このプロセスを容易にするには、まずリポジトリの独自のコピーが必要になります。このコピーでは、書き込みアクセス権を持ちます。 GitHub の "*fork*" はその目的にかなっています。
+メインのドキュメント リポジトリはすべて読み取り専用アクセスを提供するため、個人のフォークが必須になります。 変更するには、自分のフォークからメイン リポジトリに[プル要求](git-github-fundamentals.md#pull-requests)を送信する必要があります。 このプロセスを容易にするには、まずリポジトリの独自のコピーが必要になります。このコピーでは、書き込みアクセス権を持ちます。 GitHub の "*fork*" はその目的にかなっています。
 
 1. メイン リポジトリの GitHub ページに移動して、右上の **[フォーク]** ボタンをクリックします。
 

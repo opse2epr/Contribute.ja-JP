@@ -2,18 +2,18 @@
 title: GitHub アカウントのセットアップ手順
 description: この記事では、GitHub のアカウントをセットアップするプロセスについて説明します。docs.microsoft.com コンテンツに投稿するには、このアカウントが必要です。
 ms.date: 02/27/2018
-ms.openlocfilehash: 15fa7c11090a5c4faefe38d00d273e92c231329b
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805497"
 ---
 # <a name="github-account-setup"></a>GitHub アカウントのセットアップ
 
 ## <a name="set-up-your-github-account"></a>GitHub アカウントのセットアップ
 
-Docs 技術コンテンツの作成に協力するには、独自の GitHub アカウントをセットアップする必要があります。 さいわい、ほとんどの手順は 1 回行うだけで済みます。
+Docs 技術コンテンツの作成に協力するには、独自の GitHub アカウントをセットアップする必要があります。 幸い、このような手順を実行するのは、通常、1 回だけです。
 
 ### <a name="1-create-a-github-account-and-set-up-your-profile"></a>1.GitHub アカウントの作成およびプロファイルのセットアップ
 

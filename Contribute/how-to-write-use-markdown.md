@@ -2,18 +2,18 @@
 title: ドキュメントを記述するための Markdown の使用方法
 description: この記事では、docs.microsoft.com の記事を記述するために使用される Markdown の基礎と参照情報について説明します。
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805728"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>ドキュメントを記述するための Markdown の使用方法
 
-docs.microsoft.com の記事は [Markdown](https://daringfireball.net/projects/markdown/) という読みやすく、しかも簡単に学べる軽量マークアップ言語で記述されます。 そのため、これは急速に業界標準になりました。
+[docs.microsoft.com](http://docs.microsoft.com) の記事は [Markdown](https://daringfireball.net/projects/markdown/) という読みやすく、しかも簡単に学べる軽量マークアップ言語で記述されます。 そのため、これは急速に業界標準になりました。
 
-Docs のコンテンツは GitHub に格納されるので、[GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) と呼ばれる Markdown の上位セットを使用できます。GFM は一般的な書式要件のための追加機能を提供します。 さらに、Open Publishing Services (OPS) は Markdown パーサー Markdig を実装しています。 Markdig は GitHub Flavored Markdown (GFM) との互換性が高く、Docs 固有の機能を実現するための機能を提供します。
+Docs のコンテンツは GitHub に格納されるので、[GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) と呼ばれる Markdown の上位セットを使用できます。GFM は一般的な書式要件のための追加機能を提供します。 さらに、Open Publishing Services (OPS) は Markdown パーサー Markdig を実装しています。 Markdig は GFM との互換性が高く、Docs 固有の機能を実現するための機能を提供します。
 
 * Markdig は高速で、強力で、CommonMark に準拠した、.NET 向けの拡張可能なマークダウン プロセッサーです。
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Docs のコンテンツは GitHub に格納されるので、[GitHub Flavored Ma
 見出しを作成するには、ハッシュ記号 (#) を次のように使用します。
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>太字や斜体のテキスト
@@ -38,19 +38,19 @@ Docs のコンテンツは GitHub に格納されるので、[GitHub Flavored Ma
 テキストの書式を**太字**に設定するには、テキストを二重のアスタリスクで囲みます。
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 テキストの書式を*斜体*に設定するには、テキストを一重のアスタリスクで囲みます。
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 テキストの書式を***太字と斜体***の両方に設定するには、テキストを三重のアスタリスクで囲みます。
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>リスト
@@ -107,16 +107,16 @@ Docs のコンテンツは GitHub に格納されるので、[GitHub Flavored Ma
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 次のようにレンダリングされます。
 
 1. 第 1 手順
-    1. 下位手順
-    2. 下位手順
+   1. 下位手順
+   2. 下位手順
 2. 第 2 手順
 
 ### <a name="tables"></a>表
@@ -145,12 +145,12 @@ Markdown の基本仕様には表が含まれていませんが、GFM が表を�
 
 表作成の詳細については、以下の情報源をご覧ください。
 
-- 横に長い表の書式設定に役立つ、Markdig の「[表を折り返す機能](#table-wrapping)」
-- GitHub の「[Organizing information with tables (表を使用した情報の整理)](https://help.github.com/articles/organizing-information-with-tables/)」
-- [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) Web アプリ
-- Adam Pritchard 氏の「[Markdown Cheatsheet (Markdown に関する簡易参照ガイド)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)」
-- Michel Fortin 氏の [Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table) に関するページ
-- [HTML テーブルからマークダウンへの変換](https://jmalarcon.github.io/markdowntables/)
+- 横に長い表の書式設定に役立つ、Markdig の「[表を折り返す機能](#table-wrapping)」。
+- GitHub の「[Organizing information with tables (表を使用した情報の整理)](https://help.github.com/articles/organizing-information-with-tables/)」。
+- [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) Web アプリ。
+- Adam Pritchard 氏の「[Markdown Cheatsheet (Markdown に関する簡易参照ガイド)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)」。
+- Michel Fortin 氏の [Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table) に関するページ。
+- [HTML テーブルからマークダウンへの変換](https://jmalarcon.github.io/markdowntables/)。
 
 ### <a name="links"></a>リンク
 
@@ -212,6 +212,7 @@ Markdown では、コード スニペットの配置方法として、文中へ�
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ Markdig では、コード スニペット拡張機能を使用した記事へ�
 アンダー スコアを含む alt テキストは正しくレンダリングされません。 たとえば、次のテキストを使用するのではなく、
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 次のようにアンダー スコアをエスケープします。
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>アポストロフィと引用符
 
-Word から Markdown エディターにコピーしたテキストに、"スマート" (カールした) アポストロフィまたは引用符が含まれていることがあります。 これらを標準的なアポストロフィや引用符にエンコードまたは変更する必要があります。 そうしないと、ファイルが公開されたときに Itâ€™s のように表示されます
+Word から Markdown エディターにコピーしたテキストに、"スマート" (カールした) アポストロフィまたは引用符が含まれていることがあります。 これらを標準的なアポストロフィや引用符にエンコードまたは変更する必要があります。
+そうしないと、ファイルが公開されたときに Itâ€™s のように表示されます
 
 これらの "スマート" バージョンの記述記号のエンコーディングは次のとおりです。
 
@@ -358,14 +360,15 @@ Word から Markdown エディターにコピーしたテキストに、"スマ�
 
 ### <a name="angle-brackets"></a>山かっこ
 
-プレースホルダーを示すためなどに、ファイル内の (コードではなく) テキストに山かっこを使用する場合は、山かっこを手動でエンコードする必要があります。 そうしないと、それらのテキストは Markdown によって HTML タグとして認識されます。
+プレースホルダーを示す目的では一般的に山括弧が使用されます。 これを (コードではなく) テキストで行うときは、山括弧で囲む必要があります。 そうしないと、それらのテキストは Markdown によって HTML タグとして認識されます。
 
 たとえば、`<script name>` を `&lt;script name&gt;` にエンコードしてください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目:
 
 ### <a name="markdown-resources"></a>Markdown に関するリソース
 
 - [Markdown 入門](https://daringfireball.net/projects/markdown/syntax)
 - [Docs の Markdown に関する簡易参照ガイド](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [GitHub の Markdown の基本](https://help.github.com/articles/markdown-basics/)
+- [Markdown ガイド](https://www.markdownguide.org/)
