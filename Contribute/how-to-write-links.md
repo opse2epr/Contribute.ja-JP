@@ -2,12 +2,12 @@
 title: ドキュメントでのリンクの使用方法
 description: この記事では、docs.microsoft.com 内でのコンテンツへのリンクの作成に関するガイドを提供します。
 ms.date: 06/29/2017
-ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
-ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
+ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805771"
 ---
 # <a name="using-links-in-documentation"></a>ドキュメントでリンクを使用する
 この記事では、docs.microsoft.com でホストされたページからハイパーリンクを使用する方法について説明します。 いくつかの規則が変更されていますが、リンクは Markdown に簡単に追加できます。 リンクは、同じページ内のコンテンツをポイントするか、他の近くにあるページ内をポイントするか、外部のサイトや URL をポイントすることができます。
@@ -158,7 +158,7 @@ URL の構造:
 これらの URL を使用すると、コンテンツの最新バージョンにリダイレクトされます。 この方法を使うと、バージョン モニカーを指定する必要はありません。 また、バージョンが変わったときに更新する必要がある概念的コンテンツへのリンクも保持しません。
 
 正確なリンクを作成するには、リンクするページを自分のブラウザーで検索して、その URL をコピーします。
-次に、 ´ "https://docs.microsoft.com" ´ とロケール情報を削除します。
+次に、`https://docs.microsoft.com` とロケール情報を削除します。
 
 目次からリンクするときは、フル URL からロケール情報を削除したものを使用する必要があります。
 
