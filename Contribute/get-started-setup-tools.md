@@ -5,12 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251465"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609393"
 ---
 # <a name="install-content-authoring-tools"></a>コンテンツ オーサリング ツールのインストール
 
@@ -47,7 +47,7 @@ Markdown は、読みやすく、かつ習得しやすい軽量のマークア�
 
 Markdown テキストは、.md 拡張子の付いたファイルに保存されます。
 
-Markdown の基本と OPS による Markdown のカスタム拡張機能でサポートされる機能を含む、Markdown での記述方法の詳細については、後述の「[Markdown の使用方法](how-to-write-use-markdown.md)」の記事で説明します。
+Markdown の基本と Open Publishing Services (OPS) による Markdown のカスタム拡張機能でサポートされる機能を含む、Markdown での記述方法の詳細については、「[ドキュメントを記述するための Markdown の使用方法](how-to-write-use-markdown.md)」と「[OPS の Markdown 参照](markdown-reference.md)」の記事で説明します。
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
@@ -60,7 +60,7 @@ Markdown の基本と OPS による Markdown のカスタム拡張機能でサ�
 - [Linux](https://code.visualstudio.com/docs/setup/linux)
 
 > [!TIP]
-> VS Code を起動し、現在のフォルダーを開き、コマンド ラインまたは bash シェルで `code .` コマンドを実行します。 現在のフォルダーがローカル git リポジトリの一部である場合は、github 統合が Visual Studio Code に自動的に表示されます。
+> VS Code を起動し、現在のフォルダーを開き、コマンド ラインまたは bash シェルで `code .` コマンドを実行します。 現在のフォルダーがローカル git リポジトリの一部である場合は、GitHub 統合が Visual Studio Code に自動的に表示されます。
 
 ## <a name="docs-authoring-pack"></a>Docs Authoring Pack
 Visual Studio Code 用に Docs Authoring Pack をインストールします。 この一連の拡張機能には、Markdown の記述に役立つ基本的な作成サポートやプレビュー機能が含まれているため、docs.microsoft.com サイトのスタイルで Markdown がどのように表示されるかを確認できます。

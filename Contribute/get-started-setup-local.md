@@ -4,12 +4,12 @@ description: この記事では、フォークや複製のプロセスなど、�
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805679"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609501"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>ドキュメントの Git リポジトリをローカルに設定する
 
@@ -41,7 +41,7 @@ GitHub を初めて使用する場合は、次のビデオを視聴して、フ�
 
 [docs.microsoft.com](https://docs.microsoft.com) にホストされているドキュメントは、[github.com](https://www.github.com) のいくつかの異なるリポジトリに存在します。
 
-1. 使用するリポジトリが不明な場合は、Web ブラウザーを使用して docs.microsoft.com 上の記事にアクセスします。 記事の右上にある **[編集]** リンク (鉛筆のアイコン) を選択します。
+1. 使用するリポジトリが不明な場合は、Web ブラウザーを使用して [docs.microsoft.com](https://docs.microsoft.com) 上の記事にアクセスします。 記事の右上にある **[編集]** リンク (鉛筆のアイコン) を選択します。
 
    ![[編集] をクリックしてリポジトリとファイルの場所を特定します。](media/index/edit-article.png)
 

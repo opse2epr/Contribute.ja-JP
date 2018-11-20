@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805909"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609547"
 ---
 # <a name="markdown-reference-for-ops"></a>OPS の Markdown 参照
 
-Markdown は、プレーン テキスト形式の構文を使用する軽量のマークアップ言語です。 OPS では、Markdown の CommonMark 標準がサポートされており、また、docs.microsoft.com で豊富なコンテンツを提供する目的で設計されたカスタム Markdown 拡張を一部サポートしています。 この記事では、docs.microsoft.com 向けに OPS の Markdown のアルファベット順参照を提供します。
+Markdown は、プレーン テキスト形式の構文を使用する軽量のマークアップ言語です。 Open Publishing Services (OPS) では、Markdown の CommonMark 標準がサポートされており、また、docs.microsoft.com で豊富なコンテンツを提供する目的で設計されたカスタム Markdown 拡張を一部サポートしています。 この記事では、docs.microsoft.com 向けに OPS の Markdown のアルファベット順参照を提供します。
 
 あらゆるテキスト エディターを使用して Markdown を作成できます。 Markdown 構文とカスタム OPS 拡張の両方を簡単に挿入できるエディターとして、[Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) をインストールした [VS Code](https://code.visualstudio.com/) をお勧めします。
 
@@ -25,7 +25,7 @@ OPS は、すべての新しいリポジトリについて、Markdig を標準�
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>アラート (注記、ヒント、重要、注意、警告)
 
-docs.microsoft.com 上で、コンテンツの重要性を示す色とアイコンでレンダリングされるブロック引用を作成する目的で、OPS 固有の Markdown 拡張に警告が表示されます。 次の種類のアラートがサポートされています。
+アラートは、docs.microsoft.com 上でレンダリングされるブロック引用を作成するための OPS 固有の Markdown 拡張です。その色とアイコンでコンテンツの重要性を示します。 次の種類のアラートがサポートされています。
 
 ```markdown
 > [!NOTE]

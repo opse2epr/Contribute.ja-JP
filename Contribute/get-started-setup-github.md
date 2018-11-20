@@ -2,12 +2,12 @@
 title: GitHub アカウントのセットアップ手順
 description: この記事では、GitHub のアカウントをセットアップするプロセスについて説明します。docs.microsoft.com コンテンツに投稿するには、このアカウントが必要です。
 ms.date: 02/27/2018
-ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 89f45c32f969fe1186eff3b442cb995fd08a8d11
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805497"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609478"
 ---
 # <a name="github-account-setup"></a>GitHub アカウントのセットアップ
 
@@ -22,6 +22,6 @@ GitHub アカウントをまだお持ちでない場合は、[作成](https://gi
 >[!NOTE]
 > オープン ソース プロジェクトに参加している Microsoft の社員は、GitHub プロファイルで必ず自分の身元を明らかにします。 コミュニティの共同作成者は、プロファイルが雇用関係を不適切に示していないことを確認する必要があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-step"></a>次のステップ
 
 * 「[ツールのインストール](get-started-setup-tools.md)」の記事に進み、Git Bash や Markdown エディターなどをインストールします。

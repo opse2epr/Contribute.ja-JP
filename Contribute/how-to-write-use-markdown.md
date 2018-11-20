@@ -2,12 +2,12 @@
 title: ドキュメントを記述するための Markdown の使用方法
 description: この記事では、docs.microsoft.com の記事を記述するために使用される Markdown の基礎と参照情報について説明します。
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805728"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609524"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>ドキュメントを記述するための Markdown の使用方法
 
@@ -33,6 +33,14 @@ Docs のコンテンツは GitHub に格納されるので、[GitHub Flavored Ma
 #### This is heading 4
 ```
 
+見出しは atx 形式で作成してください。つまり、行の先頭で 1 つから 6 つまでのハッシュ文字 (#) を使用して見出しを示し、H1 から H6 までの HTML 見出しレベルに対応させます。 上の例では第 1 - 第 4 レベルのヘッダーが使用されています。
+
+トピックの第 1 レベルの見出し (H1) は 1 つだけにする**必要があります**。これはページ上のタイトルとして表示されます。
+
+見出しが `#` 文字で終わる場合、タイトルが正しくレンダリングされるように終わりに `#` 文字を追加する必要があります。 たとえば、`# Async Programming in F# #` のようにします。
+
+第 2 レベルの見出しによってページ上の TOC が生成されます。これはページ上のタイトルの下にある "この記事の内容" セクションに表示されます。
+
 ### <a name="bold-and-italic-text"></a>太字や斜体のテキスト
 
 テキストの書式を**太字**に設定するには、テキストを二重のアスタリスクで囲みます。
@@ -52,6 +60,18 @@ This text is *italic*.
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>ブロック引用
+
+ブロック引用は `>` 文字で作成されます。
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+先の例は次のようにレンダリングされます。
+
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 
 ### <a name="lists"></a>リスト
 
@@ -93,8 +113,8 @@ This is text is both ***bold and italic***.
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 次のようにレンダリングされます。
@@ -108,8 +128,8 @@ This is text is both ***bold and italic***.
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 次のようにレンダリングされます。
@@ -118,6 +138,8 @@ This is text is both ***bold and italic***.
    1. 下位手順
    2. 下位手順
 2. 第 2 手順
+
+すべてのエントリに対して '1.' を 使用していることに注目してください。 後の更新で新しい手順が追加されるときや既存の手順が削除されるとき、見直しが簡単になります。
 
 ### <a name="tables"></a>表
 
@@ -194,6 +216,8 @@ Markdown では、コード スニペットの配置方法として、文中へ�
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|ブラウザーの C#|csharp-interactive|
+|コンソール|console|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Markdown では、コード スニペットの配置方法として、文中へ�
 |VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+`csharp-interactive` 名によって C# 言語と、ブラウザーからサンプルを実行する機能が指定されます。 このようなスニペットは Docker コンテナーでコンパイルされ、実行されます。そのプログラム実行の結果はユーザーのブラウザー ウィンドウに表示されます。
 
 #### <a name="example-c"></a>例: C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __レンダー__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ Docs 記事では、段落、リンク、リスト、見出しなど、ほとん
 
 注ブロックによって文章がわかりにくくなることがあるので、概して注ブロックは控えめに使用する必要があります。 注ブロックでもコード ブロック、イメージ、リスト、およびリンクがサポートされますが、注ブロックを簡潔でわかりやすくするように心掛けてください。
 
+例:
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+これは次のようにレンダリングされます。
+
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+
 ### <a name="includes"></a>インクルード
 
 再利用可能なテキスト ファイルまたはイメージ ファイルを記事ファイルにインクルードする必要がある場合は、Markdig のファイル インクルード機能を使用して "インクルード" ファイルを参照できます。 この機能は、ビルド時に特定のファイルを記事ファイルにインクルードするように OPS に指示します。これにより、その指定されたファイルは公開記事に含まれるようになります。 コンテンツの再利用に役立つ 3 つのタイプのインクルードがあります。
@@ -317,13 +373,29 @@ Docs 記事では、段落、リンク、リスト、見出しなど、ほとん
 - 通常の記事と同様に、インクルード ファイル間でメディアを共有しないでください。 インクルードおよび記事ごとに、一意の名前を持つ個別ファイルを使用してください。 インクルードに関連するメディア フォルダー内にメディア ファイルを格納してください。
 - 記事の唯一のコンテンツとしてインクルードを使用しないでください。  インクルードの目的は、記事内のほかのコンテンツを補完することです。
 
+例:
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>セレクター
 
 同じ技術記事の複数のバージョンを記述するときには、複数のテクノロジまたはプラットフォームの実装の違いに対応するために、セレクターを使用します。 通常、これが最も当てはまるのは、Microsoft の開発者向けのモバイル プラットフォームのコンテンツです。 現在 Markdig にはシングル セレクターとマルチ セレクターという 2 つのタイプのセレクターがあります。
 
 選択範囲内の各記事に配置されるセレクター Markdown は同じであるため、記事のセレクターをインクルードに配置することをお勧めします。 そのうえで、同じセレクターを使用するすべての記事でそのインクルードを参照できます。
 
-### <a name="code-snippets"></a>コード スニペット
+次にセレクターの例を示します。
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+[Azure ドキュメント](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic)で、実際に使われているセレクターの例を確認できます。
+
+### <a name="code-includes"></a>コード インクルード
 
 Markdig では、コード スニペット拡張機能を使用した記事へのコードの高度なインクルードがサポートされます。 プログラミング言語の選択や構文の色分けといった GFM 機能に基づく高度なレンダリングに加えて、次のような便利な機能を使用できます。
 
@@ -348,8 +420,7 @@ Markdig では、コード スニペット拡張機能を使用した記事へ�
 
 ### <a name="apostrophes-and-quotation-marks"></a>アポストロフィと引用符
 
-Word から Markdown エディターにコピーしたテキストに、"スマート" (カールした) アポストロフィまたは引用符が含まれていることがあります。 これらを標準的なアポストロフィや引用符にエンコードまたは変更する必要があります。
-そうしないと、ファイルが公開されたときに Itâ€™s のように表示されます
+Word から Markdown エディターにコピーしたテキストに、"スマート" (カールした) アポストロフィまたは引用符が含まれていることがあります。 これらを標準的なアポストロフィや引用符にエンコードまたは変更する必要があります。 そうしないと、ファイルが公開されたときに Itâ€™s のように表示されます
 
 これらの "スマート" バージョンの記述記号のエンコーディングは次のとおりです。
 

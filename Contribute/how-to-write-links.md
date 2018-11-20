@@ -1,13 +1,15 @@
 ---
 title: ドキュメントでのリンクの使用方法
 description: この記事では、docs.microsoft.com 内でのコンテンツへのリンクの作成に関するガイドを提供します。
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805771"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609432"
 ---
 # <a name="using-links-in-documentation"></a>ドキュメントでリンクを使用する
 この記事では、docs.microsoft.com でホストされたページからハイパーリンクを使用する方法について説明します。 いくつかの規則が変更されていますが、リンクは Markdown に簡単に追加できます。 リンクは、同じページ内のコンテンツをポイントするか、他の近くにあるページ内をポイントするか、外部のサイトや URL をポイントすることができます。
@@ -22,7 +24,7 @@ docs.microsoft.com サイトは、DocFX Flavored Markdown (DFM) を実装する 
 リンク テキストに含める単語はわかりやすくすることをお勧めします。 つまり、通常の英単語にするか、リンク先のページのタイトルにします。
 
 > [!IMPORTANT]
-> 「ここをクリック」は使用しないでください。 これは SEO (検索エンジン最適化) としても悪く、また、リンク先の説明も的確にされていません。
+> 「ここをクリック」は使用しないでください。 検索エンジンの最適化としては好ましくなく、リンク先の説明としても的確ではありません。
 
 **正確:**
 
@@ -56,7 +58,7 @@ docs.microsoft.com サイトは、DocFX Flavored Markdown (DFM) を実装する 
 
   `[link text](../directory/article-name.md)`
 
-- docset 間の記事のリンク (同じリポジトリ内の場合でも): `[link text](./directory/article-name)`
+- docset 間の記事のリンク (同じリポジトリ内の場合でも):  `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > 上記の例で `~/` をリンクの一部としているのはありません。 リポジトリのルートにあるパスにリンクするには、`/` から始めます。 GitHub のソース リポジトリを移動するときに `~/` が生成する無効なリンクを含みます。 `/` が正しく解決するパスから始めます。
@@ -84,17 +86,23 @@ docs.microsoft.com サイトは、DocFX Flavored Markdown (DFM) を実装する 
 
 インクルード ファイルは別のディレクトリにあるため、より長い相対パスを使用する必要があります。 インクルード ファイルから記事にリンクするには、次のフォーマットを使用します。
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>セレクターのリンク
 
-インクルードに埋め込まれたセレクターがある場合は、Azure ドキュメント チームが行っているように次のリンク構造を使用します。
+セレクターは、ドロップダウン リストとしてドキュメント記事に表示されるナビゲーション コンポーネントです。 閲覧者がドロップダウンの値を選択すると、選択した記事がブラウザーで開きます。 通常、セレクター リストには、関連性の高い記事のリンクが含まれます。たとえば、同じ題目が複数のプログラミング言語で提示されたり、関連性の高い一連の記事が提示されたりします。 
 
-    > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
-    - [(Text1 | Example1 )](../articles/folder/article-name1.md)
-    - [(Text1 | Example2 )](../articles/folder/article-name2.md)
-    - [(Text2 | Example3 )](../articles/folder/article-name3.md)
-    - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+セレクターがインクルードに埋め込まれている場合、次のリンク構造を使用してください。
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>参照形式のリンク
 
@@ -102,23 +110,29 @@ docs.microsoft.com サイトは、DocFX Flavored Markdown (DFM) を実装する 
 
 インライン テキスト:
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 記事の最後のリンク参照:
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 コロンの後、リンクの前に必ずスペースを入れます。 他の技術情報記事にリンクする際に、スペースを入れ忘れてしまった場合、リンクが破損した状態で記事が公開されます。
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>技術ドキュメント セットではないページへのリンク
 
 別の Microsoft 資産のページ (価格のページ、SLA のページ、その他ドキュメントの記事ではないもの) にリンクする場合は、絶対 URL を使用しますが、ロケールは省略します。 ここでの目的は、リンクが GitHub と次に示すサイトで作動することです。
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>サード パーティのサイトへのリンク
 
 最高のユーザー体験は、別サイトへのユーザーの誘導を最小限に抑えます。 そのため、サード パーティのサイトにリンクする必要がある場合は、次の情報に基づいて行ってください。
@@ -146,7 +160,7 @@ URL の構造:
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-&lt;moniker-name&gt; (モニカー名) の部分は省略可能です。 省略した場合は、コンテンツの最新バージョンに移動します。 &lt;service-name&gt; 部分は、次のベース URL に示す例のいずれかです。
+`<moniker-name>` 部分は任意です。 省略した場合は、コンテンツの最新バージョンに移動します。 `<service-name>` 部分は次のベース URL に示す例のいずれかです。
 
 - Azure PowerShell (AzureRM) のコンテンツ: [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Azure PowerShell (ASM) のコンテンツ: [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)
