@@ -11,6 +11,11 @@
 ## [スタイルとボイスのクイック スタート](style-quick-start.md)
 ## [リンク](how-to-write-links.md)
 ## [Docs Authoring Pack](how-to-write-docs-auth-pack.md)
+# ドキュメント セット固有のガイダンス
+## [.NET ドキュメント](dotnet-contribute.md)
+### [.NET への協力](dotnet-contribute-process.md)
+### [.NET ドキュメントのスタイル規則](dotnet-style-guide.md)
+### [ボイスとトーンのガイド](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content
