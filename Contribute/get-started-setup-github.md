@@ -17,7 +17,7 @@ Docs 技術コンテンツの作成に協力するには、ご自身の GitHub �
 
 ### <a name="1-create-a-github-account-and-set-up-your-profile"></a>1.GitHub アカウントの作成およびプロファイルのセットアップ
 
-GitHub アカウントをまだお持ちでない場合は、[作成](https://github.com/join)してください。 GitHub プロファイルで提携を識別します。 [docs.microsoft.com](https://docs.microsoft.com) への寄稿は [MVP アワード](https://mvp.microsoft.com)の対象として考慮されます。 ID は、すべてのアクティビティの完全なプロフィールを Microsoft が作成するのに役立ちます。
+GitHub アカウントをまだお持ちでない場合は、[作成](https://github.com/join)してください。 GitHub プロファイルで提携を識別します。 [docs.microsoft.com](https://docs.microsoft.com) に投稿します。これは [MVP アワード](https://mvp.microsoft.com)の対象として考慮されます。 ID は、すべてのアクティビティの完全なプロファイルを Microsoft が作成するのに役立ちます。
 
 >[!NOTE]
 > オープン ソース プロジェクトに参加している Microsoft の社員は、GitHub プロフィールで必ず自分の身元を明らかにします。 コミュニティの共同作成者は、プロフィールが雇用関係を不適切に示していないことを確認する必要があります。
