@@ -16,6 +16,7 @@
 ### [.NET への協力](dotnet-contribute-process.md)
 ### [.NET ドキュメントのスタイル規則](dotnet-style-guide.md)
 ### [ボイスとトーンのガイド](dotnet-voice-tone.md)
+# [その他のリソース](additional-resources.md)
 
 <!--
 ## Creating new content
@@ -79,4 +80,3 @@
 
      Open question: How to keep this up to date?
    -->
-## [その他のリソース](additional-resources.md)
