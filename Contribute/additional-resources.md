@@ -4,12 +4,12 @@ description: この記事では、docs.microsoft.com に投稿するための Gi
 author: billwagner
 ms.author: wiwagn
 manager: wpickett
-ms.openlocfilehash: bf12947d0956a5ee2953d74840afe3060425074d
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4c29bfd09f17e32624ee3fc484424c4fe8d3b68e
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609570"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299639"
 ---
 # <a name="additional-git-and-github-resources"></a>その他の Git および GitHub リソース
 
@@ -21,7 +21,7 @@ Git または GitHub についてまだよく知らない場合は、学習、�
 - [Pro Git 電子書籍 (Web)](https://go.microsoft.com/fwlink/?linkid=853940): HTML 形式での詳しい git リファレンスです。
 - [Pro Git 電子書籍 (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf): 前述のリンクと同じですが、PDF 形式です。
 - [Learn Git コース (Codecademy 提供)](https://www.codecademy.com/learn/learn-git): Codeacademy が提供している Git チュートリアルです。
-- [Learn Git コース (Code School 提供)](https://www.codeschool.com/courses/try-git): Code School が提供している Git チュートリアルです
+- [Try Git コース (Pluralsight 上の Code School 提供)](https://www.pluralsight.com/courses/code-school-git-real): Pluralsight 上の Code School が提供している Git チュートリアルです。
 - [Git/GitHub コース (Udacity 提供)](https://www.udacity.com/course/how-to-use-git-and-github--ud775): Udacity が提供している Git と GitHub のチュートリアルです。
 
 ## <a name="github-resources"></a>GitHub リソース
