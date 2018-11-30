@@ -2,12 +2,12 @@
 title: .NET 記事のテンプレートとチートシート
 description: この記事には、.NET ドキュメント リポジトリ用の新しい記事を作成するときに使用できる便利なテンプレートが含まれています
 ms.date: 11/07/2018
-ms.openlocfilehash: 8980f5e39213d8f2edd1d29e66d900f2c3d04bbc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609741"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299662"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET ドキュメントのメタデータと Markdown テンプレート
 
@@ -79,9 +79,11 @@ Markdown では、書式設定に \*、\`、\# のような特殊文字が使用
 - ほとんどの場合、相対リンクを使用し、リンクに `~/` を使用することは奨励していません。相対リンクは GitHub のソースで解決されるためです。 ただし、依存レポジトリのファイルにリンクするときは必ず `~/` 文字を使用してパスを指定します。 依存レポジトリのファイルは GitHub の別の場所にあるため、記述方法に関係なく、相対リンクでは正しく解決されません。
 - C# 言語仕様と Visual Basic 言語仕様は、言語リポジトリからソースを含めることにより .NET ドキュメントに含められます。 Markdown ソースは [csharplang](https://github.com/dotnet/csharplang) リポジトリと [vblang](https://github.com/dotnet/vblang) リポジトリで管理されます。
 
-仕様のリンクは、その仕様が含まれるソース ディレクトリを指す必要があります。 C# の場合、**~/_csharplang/spec** であり、VB の場合、**~/_vblang/spec** です。
+仕様のリンクは、その仕様が含まれるソース ディレクトリを指す必要があります。 以下の例にあるとおり、C# の場合は **~/_csharplang/spec** であり、VB の場合は **~/_vblang/spec** です。
 
-- 例: `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)`
+```markdown
+[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+```
 
 ### <a name="links-to-apis"></a>API のリンク
 
@@ -111,13 +113,13 @@ Markdown では、書式設定に \*、\`、\# のような特殊文字が使用
 - System.Exception.\#ctor は、`System.Exception.%23ctor` になります
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) は、`System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29` になります
 
-型の UID、メンバー オーバーロード、特定のオーバーロードされたメンバーを `https://xref.docs.microsoft.com/autocomplete` から見つけることができます。 クエリ文字列 "?text=*\<type-member-name>*" では、UID を確認する型またはメンバーが特定されます。 たとえば、`https://xref.docs.microsoft.com/autocomplete?text=string.format` の場合、[String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) オーバーロードが取得されます。 このツールでは、指定された `text` クエリ パラメーターが UID のあらゆる部分で検索されます。 たとえば、メンバー名 (ToString)、部分的なメンバー名 (ToStri)、型とメンバーの名前 (Double.ToString) などを検索できます。
+型の UID、メンバー オーバーロード、特定のオーバーロードされたメンバーを `https://xref.docs.microsoft.com/autocomplete` から見つけることができます。 クエリ文字列 `?text=*\<type-member-name>*` では、UID を確認する型またはメンバーが特定されます。 たとえば、`https://xref.docs.microsoft.com/autocomplete?text=string.format` の場合、[String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) オーバーロードが取得されます。 このツールでは、指定された `text` クエリ パラメーターが UID のあらゆる部分で検索されます。 たとえば、メンバー名 (ToString)、部分的なメンバー名 (ToStri)、型とメンバーの名前 (Double.ToString) などを検索できます。
 
-UID の後ろに \* (または %2A) を追加すると、リンクは固有の API ではなく、オーバーロードのページを表すようになります。 これはたとえば、[List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) のような固有のオーバーロードではなく、[List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) ページに汎用的な方法でリンクする必要がある場合に使用できます。 メンバーがオーバーロードされていないとき、\* を使用してメンバー ページにリンクすることもできます。それにより、UID にパラメーターの一覧を含める必要がなくなります。
+UID の後ろに \* (または `%2A`) を追加すると、リンクは固有の API ではなく、オーバーロードのページを表すようになります。 これはたとえば、[List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) のような固有のオーバーロードではなく、[List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) ページに汎用的な方法でリンクする必要がある場合に使用できます。 メンバーがオーバーロードされていないとき、\* を使用してメンバー ページにリンクすることもできます。それにより、UID にパラメーターの一覧を含める必要がなくなります。
 
 特定のメソッド オーバーロードにリンクするには、メソッドの各パラメーターの完全修飾型名を含める必要があります。 たとえば、\<xref:System.DateTime.ToString> はパラメーターなしの [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) メソッドにリンクされますが、\<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> は [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) メソッドにリンクされます。
 
-[System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1) など、ジェネリック型にリンクするには、\` (%60) 文字にジェネリック型パラメーターの番号を続けます。 たとえば、\<xref:System.Nullable%601> は [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 型にリンクされますが、\<xref:System.Func%602> は [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) デリゲートにリンクされます。
+[System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1) など、ジェネリック型にリンクするには、\` (`%60`) 文字にジェネリック型パラメーターの番号を続けます。 たとえば、`<xref:System.Nullable%601>` は [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 型にリンクされますが、`<xref:System.Func%602>` [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) デリゲートにリンクされます。
 
 ## <a name="code"></a>コード
 
