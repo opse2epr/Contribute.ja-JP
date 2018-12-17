@@ -1,6 +1,6 @@
 ---
-title: OPS と docs.microsoft.com の Markdown
-description: Markdown および DocFX Flavored Markdown (DFM) 拡張機能の OPS プラットフォーム ガイド。
+title: docs.microsoft.com の Markdown 参照
+description: Markdown に対する Docs プラットフォーム ガイド。
 author: meganbradley
 ms.author: mbradley
 manager: jemash
@@ -8,24 +8,24 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609547"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245874"
 ---
-# <a name="markdown-reference-for-ops"></a>OPS の Markdown 参照
+# <a name="markdown-reference"></a>Markdown 参照
 
-Markdown は、プレーン テキスト形式の構文を使用する軽量のマークアップ言語です。 Open Publishing Services (OPS) では、Markdown の CommonMark 標準がサポートされており、また、docs.microsoft.com で豊富なコンテンツを提供する目的で設計されたカスタム Markdown 拡張を一部サポートしています。 この記事では、docs.microsoft.com 向けに OPS の Markdown のアルファベット順参照を提供します。
+Markdown は、プレーン テキスト形式の構文を使用する軽量のマークアップ言語です。 Docs プラットフォームでは、Markdown の CommonMark 標準がサポートされているほか、docs.microsoft.com で豊富なコンテンツを提供する目的で設計されたカスタム Markdown 拡張機能も一部サポートされています。 この記事では、docs.microsoft.com で Markdown を使用するためのアルファベット順参照を提供します。
 
-あらゆるテキスト エディターを使用して Markdown を作成できます。 Markdown 構文とカスタム OPS 拡張の両方を簡単に挿入できるエディターとして、[Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) をインストールした [VS Code](https://code.visualstudio.com/) をお勧めします。
+あらゆるテキスト エディターを使用して Markdown を作成できます。 標準の Markdown 構文とカスタム Docs 拡張機能の両方を簡単に挿入できるエディターとして、[Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) をインストールした [VS Code](https://code.visualstudio.com/) をお勧めします。
 
-OPS は、すべての新しいリポジトリについて、Markdig を標準としており、古いリポジトリは Markdig に移行されています。 [https://babelmark.github.io/](https://babelmark.github.io/) では、Markdown のレンダリングを Markdig と他のエンジンで比較テストできます。
+Docs では、Markdig Markdown エンジンが使用されます。 [https://babelmark.github.io/](https://babelmark.github.io/) では、Markdown のレンダリングを Markdig と他のエンジンで比較テストできます。
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>アラート (注記、ヒント、重要、注意、警告)
 
-アラートは、docs.microsoft.com 上でレンダリングされるブロック引用を作成するための OPS 固有の Markdown 拡張です。その色とアイコンでコンテンツの重要性を示します。 次の種類のアラートがサポートされています。
+アラートは Docs Markdown の拡張機能です。これにより、コンテンツの重要性を示す色とアイコンを使用して docs.microsoft.com 上でレンダリングされるブロック引用が作成されます。 次の種類のアラートがサポートされています。
 
 ```markdown
 > [!NOTE]
@@ -71,7 +71,7 @@ Markdown ファイルにはコード スニペットを埋め込むことがで�
 
 ## <a name="headings"></a>見出し
 
-OPS では、6 つのレベルの Markdown 見出しがサポートされています。
+Docs では、6 つのレベルの Markdown 見出しがサポートされています。
 
 ```markdown
 # This is a first level heading (H1)
@@ -92,7 +92,7 @@ OPS では、6 つのレベルの Markdown 見出しがサポートされてい�
 
 ## <a name="html"></a>HTML
 
-Markdown ではインライン HTML がサポートされていますが、OPS 経由の公開には HTML は推奨されません。値の一覧が限られていない限り、ビルドのエラーまたは警告を発生させます。 <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Markdown ではインライン HTML がサポートされていますが、Docs への公開には HTML は推奨されません。値の一覧が制限されていない限り、それによってビルドのエラーまたは警告が発生します。 <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
 
 ## <a name="images"></a>イメージ
 
@@ -116,7 +116,7 @@ Example:
 
 ## <a name="links"></a>リンク
 
-多くの場合、OPS では、他のファイルやリンクへの標準 Markdown リンクが使用されます。 リンクの種類については、下のセクションに説明があります。
+多くの場合、Docs では、他のファイルやページへの標準の Markdown リンクが使用されます。 リンクの種類については、下のセクションに説明があります。
 
 > [!TIP]
 > Docs Authoring Pack for VS Code を利用すれば、パスを理解する面倒な作業なく、相対的なリンクとブックマークを正しく挿入できます。
@@ -132,7 +132,7 @@ Example:
 
 ### <a name="relative-links-to-files-in-the-same-doc-set"></a>同じドキュメント セットのファイルの相対リンク
 
-相対パスとは、現在のファイルから見た目的のファイルまでのパスです。 OPS の場合、同じドキュメント セット内で別のファイルへのリンクの相対パスを利用できます。 相対パスの構文は次のようになります。
+相対パスとは、現在のファイルから見た目的のファイルまでのパスです。 Docs では、相対パスを使用することで、同じドキュメント セット内の別のファイルにリンクすることができます。 相対パスの構文は次のようになります。
 
 ```markdown
 [link text](../../folder/filename.md)
@@ -142,7 +142,7 @@ Example:
 
 - 相対パスはビルド中に解決されますが、その中で .md 拡張が削除されます。
 - "../" を使用して親フォルダー内のファイルにリンクできますが、そのファイルは同じドキュメント セット内に置かれている必要があります。 "../" を使用して別のドキュメント セット フォルダー内のファイルにリンクすることはできません。
-- OPS は、"~" で始まる特殊な形式の相対パスもサポートされています (~/foo/bar.md など)。 この構文は、ドキュメント セットのルート フォルダーから相対的に見たファイルを示しています。 この種類のパスも、ビルド中に検証および解決されます。
+- Docs では、"~" で始まる特殊な形式の相対パスもサポートされています (~/foo/bar.md など)。 この構文は、ドキュメント セットのルート フォルダーから相対的に見たファイルを示しています。 この種類のパスも、ビルド中に検証および解決されます。
 
 > [!IMPORTANT]
 > 相対パスにファイル拡張子を含めてください。 その相対パスの目的ファイルの存在がビルドで検証されます。 相対パスにファイル拡張子が含まれない場合、ビルドにより、リンクが壊れていると警告されます。 たとえば、次のような URL を使用します。
@@ -153,7 +153,7 @@ Example:
 >
 > `[link text](../../folder/filename)`
 
-### <a name="absolute-links-to-other-files-in-ops"></a>OPS の他のファイルへの絶対リンク
+### <a name="site-relative-links-to-other-files-on-docs"></a>Docs 上の他のファイルへのサイト相対リンク
 
 ```markdown
 [Azure and Linux](/articles/virtual-machines/linux/overview)
@@ -252,7 +252,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 番号付きリストを作成するには、すべての 1 を使用できます。これは公開されると、連続する一覧としてレンダリングされます。 ソースを読みやすくするために、リストをインクリメントできます。
 
-入れ子になっているリストなど、リストには文字を使用しないでください。 OPS 経由で公開するとき、正しくレンダリングされません。 番号を使用する入れ子リストは、公開されると、小文字としてレンダリングされます。 次に例を示します。
+入れ子になっているリストなど、リストには文字を使用しないでください。 Docs に公開するとき、それらは正しくレンダリングされません。番号を使用する入れ子リストは、公開されると、小文字としてレンダリングされます。 次に例を示します。
 
 ```markdown
 1. This is
@@ -423,14 +423,6 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-<!-- uncomment and link when Cory's topic is live
-## Tabbed content
-
-Tabs are a Markdown extension for docs.microsoft.com that allow us to present different versions of content, such as procedural steps to accomplish the same task on different platforms, in a tabbed format.
-
-Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
--->
-
 ## <a name="tables"></a>表
 
 Markdow で表を作成する最も簡単な方法は、パイプと行を使用することです。 ヘッダー付きの標準的な表を作成するには、最初の行の後に点線を続けます。
@@ -535,13 +527,13 @@ docs.microsoft.com の場合、HTML テーブルは推奨されません。 ソ�
 
 ### <a name="embedding-videos-into-a-markdown-page"></a>Markdown ページに動画を埋め込む
 
-現在のところ、OPS では、次の 3 つの場所に公開された動画がサポートされます。
+現在、Docs では、次の 3 つの場所のいずれかに公開される動画がサポートされます。
 
 - YouTube
 - Channel 9
 - Microsoft 独自の 'One Player' システム
 
-次の構文を使用してビデオを埋め込むと、OPS でこれがレンダリングされます。
+次の構文を使用してビデオを埋め込むことができ、そのビデオは Docs でレンダリングされます。
 
 ```markdown
 > [!VIDEO <embedded_video_link>]

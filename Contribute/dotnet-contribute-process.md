@@ -2,18 +2,18 @@
 title: .NET ドキュメント リポジトリに対する共同作成プロセス
 description: この記事では、.NET ドキュメント リポジトリに対する共同作成方法について簡単に紹介します。 使用するリポジトリについて、コンテンツを整理するプロセスについて、さらにコード サンプルなどの資産を管理するためのポリシーについて説明します。
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609764"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245851"
 ---
-# <a name="process-for-contributing-to-net-docs"></a> .NET ドキュメントに対する共同作成プロセス
+# <a name="process-for-contributing-to-net-docs"></a>.NET ドキュメントに対する共同作成プロセス
 
 ドキュメントに対するコミュニティの投稿に感謝します。 .NET ドキュメントを共同作成する際に留意する必要がある適用規則のいくつかを次の一覧に示します。
 
-- Microsoft が予期していない大量のプル要求を**送信しないでください**。 Issue を提出してディスカッションを開始していただければ、長い時間が費やされる前に Microsoft はその目的に同意することができます。
+- Microsoft が予期していない大量の pull request を**送信しないでください**。 Issue を提出してディスカッションを開始していただければ、長い時間が費やされる前に Microsoft はその目的に同意することができます。
 - 以下に示す手順と[ボイスおよびトーン](dotnet-voice-tone.md)のガイドラインに**従ってください**。
 - ご自分の作業の出発点として**テンプレート ファイル**を[使用してください](dotnet-style-guide.md)。
 - 記事で作業する前に、使用するフォーク上に独立したブランチを**作成します**。
@@ -65,7 +65,7 @@ ms.locfileid: "51609764"
             /porting-overview
                 portability_report.png
 
-**手順 4:** ご利用のブランチからマスター ブランチにプル要求 (PR) を送信します。
+**手順 4:** ご利用のブランチからマスター ブランチに Pull Request (PR) を送信します。
 
 > [!IMPORTANT]
 > この時点で、[コメント オートメーション](how-to-write-workflows-major.md#review-and-sign-off)機能は、すべての .NET ドキュメント リポジトリで使用できません。 この PR は .NET ドキュメント チームのメンバーによって確認およびマージされます。
@@ -131,6 +131,7 @@ Microsoft はこれらのプロジェクトをすぐにビルドできるよう�
 2. 使用するサンプルで実演する概念を説明するトピックを記述します (例: `docs/standard/linq/where-clause.md`)。
 3. 使用するサンプルを作成します (例: `WhereClause-Sample1.cs`).
 4. そのサンプルを呼び出す Main エントリ ポイントを使用して Program.cs を作成します。 それがそこに既に存在する場合は、サンプルの呼び出しを追加します。
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ Microsoft はこれらのプロジェクトをすぐにビルドできるよう�
         }
     }
     ```
+
 [.NET Core SDK](https://www.microsoft.com/net/download) を使用してインストールすることができる .NET Core CLI を使用して任意の .NET Core スニペットまたはサンプルを作成します。 使用するサンプルを作成し実行するには:
 
 1. sample フォルダーに進み、エラーをチェックするために次をビルドします。
@@ -189,4 +191,4 @@ C# インタラクティブ エクスペリエンスによって、サンプル�
 
 契約: [net-foundation-contribution-license-agreement.pdf](https://github.com/dotnet/home/blob/master/guidance/net-foundation-contribution-license-agreement.pdf)
 
-事前に契約書に署名しておく必要はありません。 通常どおり、ご自分の PR を複製、フォーク、送信することができます。 ご自分の PR が作成されたら、それを CLA ボットによって分類することができます。 変更が小さい場合 (たとえば、入力ミスの修正)、PR には `cla-not-required` というラベルが適用されます。 それ以外の場合は、`cla-required` として分類されます。 CLA に署名すると、現在のプル要求および今後のすべてのプル要求には `cla-signed` というラベルが付けられます。
+事前に契約書に署名しておく必要はありません。 通常どおり、ご自分の PR を複製、フォーク、送信することができます。 ご自分の PR が作成されたら、それを CLA ボットによって分類することができます。 変更が小さい場合 (たとえば、入力ミスの修正)、PR には `cla-not-required` というラベルが適用されます。 それ以外の場合は、`cla-required` として分類されます。 CLA に署名すると、現在の pull requests および今後のすべてのプル要求には `cla-signed` というラベルが付けられます。
