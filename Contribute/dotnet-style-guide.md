@@ -230,11 +230,11 @@ docs.microsoft では、GitHub Flavored Markdown の追加拡張機能をいく�
 これは次のようにレンダリングされます。
 
 > [!div class="checklist"]
-> * How to create a .NET Core app
-> * How to add a reference to the Microsoft.XmlSerializer.Generator package
-> * How to edit your MyApp.csproj to add dependencies
-> * How to add a class and an XmlSerializer
-> * How to build and run the application
+> * NET Core アプリの作成方法
+> * Microsoft.XmlSerializer.Generator パッケージへの参照を追加する方法
+> * MyApp.csproj を編集して依存関係を追加する方法
+> * クラスと XmlSerializer を追加する方法
+> * アプリケーションをビルドして実行する方法
 
 [.NET Core ドキュメント](https://docs.microsoft.com/dotnet/core/additional-tools/xml-serializer-generator)で、実際に使われているチェック済みリストの例を確認できます。
 
