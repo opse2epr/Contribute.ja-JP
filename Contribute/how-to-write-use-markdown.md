@@ -2,12 +2,12 @@
 title: ドキュメントを記述するための Markdown の使用方法
 description: この記事では、docs.microsoft.com の記事を記述するために使用される Markdown の基礎と参照情報について説明します。
 ms.date: 07/13/2017
-ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
+ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245897"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53615837"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>ドキュメントを記述するための Markdown の使用方法
 
@@ -232,7 +232,8 @@ Markdown では、コード スニペットの配置方法として、文中へ�
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
-|Power Apps Formula|powerappsfl|
+|PowerApps (ドット小数点区切り記号)|powerapps-dot|
+|PowerApps (コンマ小数点区切り記号)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
