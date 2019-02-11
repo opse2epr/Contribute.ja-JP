@@ -2,12 +2,12 @@
 title: .NET 記事のテンプレートとチートシート
 description: この記事には、.NET ドキュメント リポジトリ用の新しい記事を作成するときに使用できる便利なテンプレートが含まれています
 ms.date: 11/07/2018
-ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
-ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
+ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53264504"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712926"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET ドキュメントのメタデータと Markdown テンプレート
 
@@ -123,7 +123,7 @@ UID の後ろに \* (または `%2A`) を追加すると、リンクは固有の
 
 ## <a name="code"></a>コード
 
-コードを含める最良の方法は、動作するサンプルからの抜粋を含めることです。 [.NET に協力する](dotnet-contribute-process.md#contributing-to-samples)方法に関する記事の指示に従い、サンプルを作成します。 コードを含める基本的規則は、[コード](how-to-write-use-markdown.md#code-includes)の一般的なガイダンスにあります。
+コードを含める最良の方法は、動作するサンプルからの抜粋を含めることです。 [.NET に協力する](dotnet-contribute-process.md#contributing-to-samples)方法に関する記事の指示に従い、サンプルを作成します。 コードを含める基本的規則は、[コード](how-to-write-use-markdown.md#code-snippets)の一般的なガイダンスにあります。
 
 次の構文でコードを含めることができます。
 
