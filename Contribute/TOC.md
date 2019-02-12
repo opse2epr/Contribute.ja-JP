@@ -16,6 +16,7 @@
 ### [.NET への協力](dotnet-contribute-process.md)
 ### [.NET ドキュメントのスタイル規則](dotnet-style-guide.md)
 ### [ボイスとトーンのガイド](dotnet-voice-tone.md)
+### [pull request のレビュー プロセス](dotnet-pr-review.md)
 # [その他のリソース](additional-resources.md)
 
 <!--
