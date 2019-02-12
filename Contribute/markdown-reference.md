@@ -1,19 +1,17 @@
 ---
 title: docs.microsoft.com の Markdown 参照
-description: Markdown に対する Docs プラットフォーム ガイド。
+description: Microsoft Docs プラットフォームで使われる Markdown の機能と構文について学習します。
 author: meganbradley
 ms.author: mbradley
-manager: jemash
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-audience: internal,external
-ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245874"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712949"
 ---
 # <a name="markdown-reference"></a>Markdown 参照
 

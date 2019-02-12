@@ -1,24 +1,19 @@
 ---
 title: ドキュメントを記述するための Markdown の使用方法
 description: この記事では、docs.microsoft.com の記事を記述するために使用される Markdown の基礎と参照情報について説明します。
-ms.date: 07/13/2017
-ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
-ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
+ms.date: 01/29/2019
+ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53615837"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887300"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>ドキュメントを記述するための Markdown の使用方法
 
 [docs.microsoft.com](http://docs.microsoft.com) の記事は [Markdown](https://daringfireball.net/projects/markdown/) という読みやすく、しかも簡単に学べる軽量マークアップ言語で記述されます。 そのため、これは急速に業界標準になりました。
 
-Docs のコンテンツは GitHub に格納されるので、[GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) と呼ばれる Markdown の上位セットを使用できます。GFM は一般的な書式要件のための追加機能を提供します。 さらに、Open Publishing Services (OPS) は Markdown パーサー Markdig を実装しています。 Markdig は GFM との互換性が高く、Docs 固有の機能を実現するための機能を提供します。
-
-* Markdig は高速で、強力で、CommonMark に準拠した、.NET 向けの拡張可能なマークダウン プロセッサーです。
-* https://github.com/lunet-io/markdig
-* 優れたコミュニティ サポート
-* 優れた標準サポート
+docs.microsoft.com サイトのバックエンドでは、Open Publishing Services (OPS) が使われています。これは、[Markdig](https://github.com/lunet-io/markdig) を使って解析される [CommonMark](https://commonmark.org/) 準拠のマークダウンをサポートし、また [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/) もサポートしています。 ほとんどのドキュメントが GitHub に格納され、そこで編集可能であるように、これらのマークダウンの種類のほとんどは [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) と互換性があります。 Markdown の拡張機能を通じて、その他の機能が追加されています。
 
 ## <a name="markdown-basics"></a>Markdown の基本
 
@@ -220,6 +215,7 @@ Markdown では、コード スニペットの配置方法として、文中へ�
 |コンソール|console|
 |CSHTML|cshtml|
 |DAX|dax|
+|Docker|dockerfile|
 |F#|fsharp|
 |Go|go|
 |HTML|html|
@@ -227,8 +223,8 @@ Markdown では、コード スニペットの配置方法として、文中へ�
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Kusto Query Language|kusto|
 |Markdown|md|
-|NodeJS|nodejs|
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
@@ -243,7 +239,6 @@ Markdown では、コード スニペットの配置方法として、文中へ�
 |Swift|swift|
 |TypeScript|typescript|
 |VB|vb|
-|VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
 

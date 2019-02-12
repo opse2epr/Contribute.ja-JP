@@ -4,17 +4,17 @@ description: この記事では、docs.microsoft.com 内でのコンテンツへ
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609432"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887254"
 ---
 # <a name="using-links-in-documentation"></a>ドキュメントでリンクを使用する
 この記事では、docs.microsoft.com でホストされたページからハイパーリンクを使用する方法について説明します。 いくつかの規則が変更されていますが、リンクは Markdown に簡単に追加できます。 リンクは、同じページ内のコンテンツをポイントするか、他の近くにあるページ内をポイントするか、外部のサイトや URL をポイントすることができます。
 
-docs.microsoft.com サイトは、DocFX Flavored Markdown (DFM) を実装する Open Publishing Services (OPS) をバックエンドで使用します。 DFM は、GitHub Flavored Markdown (GFM) と高い互換性があり、DFM は Markdown 拡張機能を介して機能を追加します。
+docs.microsoft.com サイトのバックエンドでは、Open Publishing Services (OPS) が使われています。これは、[Markdig](https://github.com/lunet-io/markdig) を使って解析される [CommonMark](https://commonmark.org/) 準拠のマークダウンをサポートし、また [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/) もサポートしています。 ほとんどのドキュメントが GitHub に格納され、そこで編集可能であるように、これらのマークダウンの種類のほとんどは [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) と互換性があります。 Markdown の拡張機能を通じて、その他の機能が追加されています。
 
 > [!IMPORTANT]
 > ターゲットでサポートされている場合 (このケースが大半) は必ず、すべてのリンクをセキュリティで保護する必要があります (`http` ではなく `https`)。
@@ -137,12 +137,12 @@ docs.microsoft.com サイトは、DocFX Flavored Markdown (DFM) を実装する 
 
 最高のユーザー体験は、別サイトへのユーザーの誘導を最小限に抑えます。 そのため、サード パーティのサイトにリンクする必要がある場合は、次の情報に基づいて行ってください。
 
-- **アカウンタビリティ**: 共有する情報がサード パーティの情報である場合に、サード パーティのコンテンツにリンクする。 たとえば、Microsoft のサイトで Android Developer Tools の使用方法の説明はしません。これは、Google が説明するべきことです。 必要であれば、Azure *で* Android 開発者用ツールを使用する方法を説明することはできますが、Google のツールの使用方法は、Google が説明することです。
-- **PM サインオフ**: サードパーティ コンテンツの Microsoft サインオフを要求する。 サード パーティのコンテンツにリンクすることは、Microsoft がそのコンテンツを信頼していること、またユーザーがその指示に従った場合の Microsoft の責任を意味することになります
-- **情報の鮮度のレビュー**: サード パーティの情報がまだ最新で、間違いがなく、関連していること、そしてリンクが変更していないことを確認する。
-- **オフサイト**: 別のサイトに移動していることをユーザーが認識できるようにする。 それが明確でない状況の場合は、適切なフレーズを追加します。 たとえば、"必要条件に Android Developer Tools が含まれます。このツールは Android Studio サイトでダウンロードできます" などです。
-- **次のステップ:** 「次のステップ」セクションに、MVP のブログなどへのリンクを追加しても構いません。 この場合も、サイトを離れることをユーザーが必ず認識できるようにしてください
-- **合法**: Microsoft は、各 ms.com ページにある「**利用条件**」のフッターの **「サード パーティのサイト」へのリンク**で、合法的に保護されています
+- **アカウンタビリティ**:共有する情報がサード パーティの情報である場合に、サード パーティのコンテンツにリンクする。 たとえば、Microsoft のサイトで Android Developer Tools の使用方法の説明はしません。これは、Google が説明するべきことです。 必要であれば、Azure *で* Android 開発者用ツールを使用する方法を説明することはできますが、Google のツールの使用方法は、Google が説明することです。
+- **PM サインオフ**:サード パーティのコンテンツに対して Microsoft サインオフを要求する。 サード パーティのコンテンツにリンクすることは、Microsoft がそのコンテンツを信頼していること、またユーザーがその指示に従った場合の Microsoft の責任を意味することになります
+- **情報の鮮度のレビュー**:サード パーティの情報がまだ最新で、適切で、関連があり、リンクが変更されていないことを確認する。
+- **オフサイト**:別のサイトに移動していることをユーザーが認識できるようにする。 それが明確でない状況の場合は、適切なフレーズを追加します。 次に例を示します。"必要条件に Android Developer Tools が含まれています。これは Android Studio サイトでダウンロードできます。"
+- **次の手順**:「次の手順」セクションには、たとえば MVP のブログに対するリンクを追加しても構いません。 この場合も、サイトを離れることをユーザーが必ず認識できるようにしてください
+- **法的情報**:Microsoft は、すべての ms.com ページにおいて、**利用条件**フッターの**サード パーティのサイトへのリンク**によって法的に保護されています。
 
 ## <a name="links-to-msdn-or-technet"></a>MSDN または TechNet へのリンク
 
