@@ -17,7 +17,7 @@
 
 2 つのタブとタブ グループ終端記号を含む単一レベルのタブ セクションの例: 
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...
