@@ -572,7 +572,7 @@ docs.microsoft.com の場合、HTML テーブルは推奨されません。 ソ�
 新しい動画は次のプロセスでアップロードしてください。
 
 1. IDWEB で **docs_video_users** グループに参加します。
-1. https://aka.ms/VideoUploadRequest に移動し、動画の詳細を入力します。 次の項目が必要になります (いずれも公開されません)。
+1. [https://aka.ms/VideoUploadRequest](https://aka.ms/VideoUploadRequest) に移動し、動画の詳細を入力します。 次の項目が必要になります (いずれも公開されません)。
     1. 動画のタイトル。
     1. 動画が関連する製品/サービスの一覧。
     1. 動画がホストされる対象ページまたは (ページをまだ用意していない場合) ドキュメント セット。
