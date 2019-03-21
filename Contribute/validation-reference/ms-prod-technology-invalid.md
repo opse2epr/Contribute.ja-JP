@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 92e8b17c3b5c96d544d12d394534a494ada3b901
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 20706a44da0320c1a3fc85592a4636efba364dc7
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713271"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987585"
 ---
 # <a name="ms-prod-and-technology-invalid"></a>ms-prod-and-technology-invalid
 
@@ -29,9 +29,7 @@ ms.locfileid: "55713271"
 
 `ms.prod` の値がご自分の記事に対して適切であることを確認します。 次に、有効な `ms.technology` の値を選びます。
 
-有効な値は、[こちらの Microsoft 内部サイト](https://docsmetadatatool.azurewebsites.net/whitelists)にあります。
-
-<!-- Can we link to whitelist externally? -->
+有効な値は、[こちらの Microsoft 内部サイト](https://docsmetadatatool.azurewebsites.net/allowlists)にあります。
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
