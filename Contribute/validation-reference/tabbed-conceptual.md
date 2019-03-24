@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987823"
+---
 # <a name="tabbed-conceptual"></a>タブ付き概念
 
 > [!IMPORTANT]
@@ -58,13 +66,13 @@ PowerShell content for Windows...
 - 許可される依存関係は単一レベルに限られます。
 - 2 つ以上のタブが許可されます。
 - 4 つ以下のタブが許可されます。
-- タブはホワイトリストに含める必要があります。
+- タブは許可される必要があります。
 - タブ/ID のペアが有効である必要があります。
 - 1 つのタブ グループ内で同じタブ ID を複数回使用することはできません。
 
-## <a name="tab-whitelist"></a>タブ ホワイトリスト
+## <a name="approved-tabs"></a>承認されているタブ
 
-次のタブ名/タブ ID のペアはホワイトリストに含められます。 依存タブ ID は、ペアになりませんが、タブ ID 列ごとに有効である必要があります。 値は大文字と小文字が区別されます。
+次のタブ名/タブ ID のペアが許可されます。 依存タブ ID は、ペアになりませんが、タブ ID 列ごとに有効である必要があります。 値は大文字と小文字が区別されます。
 
 |タブ名              |タブ ID            |
 |----------------------|------------------|
