@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b4ac631a4ebdf7daf00bc39be80fe2e479720392
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712949"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987884"
 ---
 # <a name="markdown-reference"></a>Markdown 参照
 
@@ -90,7 +90,7 @@ Docs では、6 つのレベルの Markdown 見出しがサポートされてい
 
 ## <a name="html"></a>HTML
 
-Markdown ではインライン HTML がサポートされていますが、Docs への公開には HTML は推奨されません。値の一覧が制限されていない限り、それによってビルドのエラーまたは警告が発生します。 <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Markdown ではインライン HTML がサポートされていますが、Docs への公開には HTML は推奨されません。値の一覧が制限されていない限り、それによってビルドのエラーまたは警告が発生します。
 
 ## <a name="images"></a>イメージ
 
@@ -110,7 +110,7 @@ Example:
 - .jpg
 - .png
 
-ドキュメント セットの docfx.json ファイル<!--add link to reference when available--> にリソースとして追加することで、他の種類のイメージのサポートを追加できます。
+ドキュメント セットの docfx.json ファイルにリソースとして追加することで、他の種類のイメージのサポートを追加できます<!--add link to reference when available--> 。
 
 ## <a name="links"></a>リンク
 
@@ -169,7 +169,7 @@ Example:
 
 ### <a name="bookmark-links"></a>ブックマーク リンク
 
-同じリポジトリにおける別ファイルの見出しへのブックマーク リンクは次のようになります。
+同じリポジトリにおける別ファイルの見出しへのブックマーク リンクは次のようになります。 次に例を示します。
 
 ```markdown
 [Managed Disks](../../linux/overview.md#managed-disks)
@@ -181,7 +181,12 @@ Example:
 [Managed Disks](#managed-disks)
 ```
 
-ハッシュ タグの後ろに句読点を取り除いた見出し語を続けます。スペースはダッシュに置き換えます。
+ハッシュ記号 `#` に見出しの単語を続けて使用します。 見出しテキストをリンク テキストに変更するには、次の操作を行います。
+- すべて小文字を使用する
+- 句読点を削除する
+- スペースをダッシュに置き換える
+
+たとえば、見出しの名前が "2.2 Security concerns" の場合は、ブックマークのリンク テキストは "#22-security-concerns" になります。
 
 ### <a name="explicit-anchor-links"></a>明示的なアンカー リンク
 
@@ -336,7 +341,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 ## <a name="section-definition"></a>セクション定義
 
-<!-- more info about this would be helpful! --> 場合によっては、セクションを定義する必要があります。 この構文は多くの場合、コード表に使用されます。
+<!-- more info about this would be helpful! -->
+セクションを定義する必要がある場合があります。 この構文は多くの場合、コード表に使用されます。
 次の例を参照してください。
 
 ````
@@ -360,7 +366,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 ## <a name="selectors"></a>セレクター
 
-<!-- could be more clear! --> 同じ記事に対してさまざまなページをつなげるなら、セレクターを使用できます。 閲覧者はページを切り替えることができます。
+<!-- could be more clear! -->
+同じ記事に対してさまざまなページをつなげる場合は、セレクターを使用できます。 閲覧者はページを切り替えることができます。
 
 > [!NOTE]
 > この拡張機能は、docs.microsoft.com と MSDN で機能が異なります。 <!-- should we keep info about MSDN? If so say how they differ?-->
