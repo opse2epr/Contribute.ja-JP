@@ -1,3 +1,14 @@
+---
+author: meganbradley
+ms.author: mbradley
+ms.date: 03/29/2019
+ms.openlocfilehash: a3b383021046412620c616882b19cb06f4dc59f8
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653553"
+---
 # <a name="locale-specific-links"></a>ロケール固有のリンク
 
 特定の Microsoft サイトへのリンクにロケールのコード (`en-us` など) を含めるべきではありません。 英語のコンテンツ内のリンクにロケールのコードを含めた場合、それはローカライズされたリンクにも含まれることになり、ローカライズのエクスペリエンスが損なわれます。 たとえば、ドイツ語にローカライズされたコンテンツ内のリンクが `en-us` を含んでいた場合、ドイツ語を使用するお客様が、ドイツ語の記事があるにもかかわらず英語の記事にリンクされることになります。
