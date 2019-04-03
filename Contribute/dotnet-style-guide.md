@@ -2,12 +2,12 @@
 title: .NET 記事のテンプレートとチートシート
 description: この記事には、.NET ドキュメント リポジトリ用の新しい記事を作成するときに使用できる便利なテンプレートが含まれています
 ms.date: 11/07/2018
-ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712926"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653622"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET ドキュメントのメタデータと Markdown テンプレート
 
@@ -132,7 +132,7 @@ UID の後ろに \* (または `%2A`) を追加すると、リンクは固有の
 ```
 
 * `-<language>` (*省略可能*ですが、実施することを*お勧めします*)
-  * 参照されているコード スニペットの言語。 サポートされている値の一覧については、[サポートされている言語](#supported-languages)に関するページを参照してください。
+  * 参照されているコード スニペットの言語。
 
 * `<name>` (*省略可能*)
   * コード スニペットの名前。 出力 HTML には影響はありませんが、これを使用して Markdown ソースの読みやすさを向上させることができます。
