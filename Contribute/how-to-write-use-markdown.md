@@ -1,19 +1,18 @@
 ---
 title: ドキュメントを記述するための Markdown の使用方法
 description: この記事では、docs.microsoft.com の記事を記述するために使用される Markdown の基礎と参照情報について説明します。
-ms.date: 01/29/2019
-ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.date: 03/26/2019
+ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887300"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637485"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>ドキュメントを記述するための Markdown の使用方法
 
-[docs.microsoft.com](http://docs.microsoft.com) の記事は [Markdown](https://daringfireball.net/projects/markdown/) という読みやすく、しかも簡単に学べる軽量マークアップ言語で記述されます。 そのため、これは急速に業界標準になりました。
+[docs.microsoft.com](http://docs.microsoft.com) の記事は [Markdown](https://daringfireball.net/projects/markdown/) という読みやすく、しかも簡単に学べる軽量マークアップ言語で記述されます。 そのため、これは急速に業界標準になりました。 ドキュメント サイトでは、[Markdig フレーバー](#markdown-flavor)の Markdown が使われます。
 
-docs.microsoft.com サイトのバックエンドでは、Open Publishing Services (OPS) が使われています。これは、[Markdig](https://github.com/lunet-io/markdig) を使って解析される [CommonMark](https://commonmark.org/) 準拠のマークダウンをサポートし、また [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/) もサポートしています。 ほとんどのドキュメントが GitHub に格納され、そこで編集可能であるように、これらのマークダウンの種類のほとんどは [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) と互換性があります。 Markdown の拡張機能を通じて、その他の機能が追加されています。
 
 ## <a name="markdown-basics"></a>Markdown の基本
 
@@ -162,7 +161,6 @@ Markdown の基本仕様には表が含まれていませんが、GFM が表を�
 
 表作成の詳細については、以下の情報源をご覧ください。
 
-- 横に長い表の書式設定に役立つ、Markdig の「[表を折り返す機能](#table-wrapping)」。
 - GitHub の「[Organizing information with tables (表を使用した情報の整理)](https://help.github.com/articles/organizing-information-with-tables/)」。
 - [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) Web アプリ。
 - Adam Pritchard 氏の「[Markdown Cheatsheet (Markdown に関する簡易参照ガイド)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)」。
@@ -207,6 +205,7 @@ Markdown では、コード スニペットの配置方法として、文中へ�
 |AzCopy|azcopy|
 |Azure CLI|azurecli|
 |Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
@@ -430,6 +429,10 @@ Word から Markdown エディターにコピーしたテキストに、"スマ�
 プレースホルダーを示す目的では一般的に山括弧が使用されます。 これを (コードではなく) テキストで行うときは、山括弧で囲む必要があります。 そうしないと、それらのテキストは Markdown によって HTML タグとして認識されます。
 
 たとえば、`<script name>` を `&lt;script name&gt;` にエンコードしてください。
+
+## <a name="markdown-flavor"></a>Markdown のフレーバー
+
+docs.microsoft.com サイトのバックエンドでは、Open Publishing Services (OPS) が使われています。これは、[Markdig](https://github.com/lunet-io/markdig) 解析エンジンを使って解析される [CommonMark](https://commonmark.org/) 準拠のマークダウンをサポートしています。 ほとんどのドキュメントが GitHub に格納され、そこで編集可能であるように、このマークダウンのフレーバーのほとんどは [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) と互換性があります。 Markdown の拡張機能を通じて、その他の機能が追加されています。
 
 ## <a name="see-also"></a>関連項目:
 
