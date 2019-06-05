@@ -2,12 +2,12 @@
 title: ドキュメントを記述するための Markdown の使用方法
 description: この記事では、docs.microsoft.com の記事を記述するために使用される Markdown の基礎と参照情報について説明します。
 ms.date: 03/26/2019
-ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 9fcd76e6103761465815784e4bf24e7042fb9f34
+ms.sourcegitcommit: 5f7212a091e9fc4e9cd1320fdfa8efaff51384c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637485"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373107"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>ドキュメントを記述するための Markdown の使用方法
 
@@ -150,7 +150,7 @@ Markdown の基本仕様には表が含まれていませんが、GFM が表を�
 | $1                   | $1                   | $1              |
 ```
 
-次のようにレンダリングされます。
+これは次のようにレンダリングされます。
 
 | Fun                  | With                 | 表          |
 | :------------------- | -------------------: |:---------------:|
@@ -294,7 +294,7 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>OPS による Markdown のカスタム拡張機能
 
 > [!NOTE]
-> Open Publishing Services (OPS) は GitHub Flavored Markdown (GFM) との互換性が非常に高い Markdown パーサー Markdig を実装しています。 Markdig は Markdown 拡張機能を介していくつかの機能を追加しています。 そのため、完全版の「OPS Authoring Guide」 (OPS オーサリング ガイド) の一部の記事は、参考のためにこのガイドに含まれています  (たとえば、目次の「Markdig and Markdown extensions」(Markdig と Markdown の拡張機能) と「Code snippets」(コード スニペット) をご覧ください)。
+> Open Publishing Services (OPS) は GitHub Flavored Markdown (GFM) との互換性が非常に高い Markdown パーサー Markdig を実装しています。 Markdig は Markdown 拡張機能を介していくつかの機能を追加しています。 そのため、完全版の「OPS Authoring Guide」 (OPS オーサリング ガイド) の一部の記事は、参考のためにこのガイドに含まれています (たとえば、目次の「Markdig and Markdown extensions」(Markdig と Markdown の拡張機能) と「Code snippets」(コード スニペット) をご覧ください)。
 
 Docs 記事では、段落、リンク、リスト、見出しなど、ほとんどの書式設定に GFM が使用されます。 記事の高度な書式設定には、次のような Markdig 機能を使用できます。
 
