@@ -1,11 +1,12 @@
 ---
 ms.date: 03/29/2019
-ms.openlocfilehash: 4e07ecf777f1361e21343b7b80f59ad9c5e86b3e
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+title: タブ付き概念
+ms.openlocfilehash: 3d6f38c1659297182a8bd50bf52b9853bd21b2c8
+ms.sourcegitcommit: 1e53d17639277bebd89b2e7cabeb45bdad526354
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653415"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66841286"
 ---
 # <a name="tabbed-conceptual"></a>タブ付き概念
 
@@ -16,15 +17,15 @@ ms.locfileid: "58653415"
 
 タブの構文は次のようになります。
 
-単一レベルのタブ:　
+単一レベルのタブ:
 
 `# [Tab Display Name](#tab/tab-id)`
 
-省略可能な依存タブ:　
+省略可能な依存タブ:
 
 `# [Tab Display Name](#tab/tab-id/tab-condition)`
 
-2 つのタブとタブ グループ終端記号を含む単一レベルのタブ セクションの例: 
+2 つのタブとタブ グループ終端記号を含む単一レベルのタブ セクションの例:
 
 ```markdown
 # [Linux](#tab/linux)
