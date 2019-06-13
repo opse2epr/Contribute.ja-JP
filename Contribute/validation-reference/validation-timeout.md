@@ -1,0 +1,29 @@
+---
+title: validation-timeout
+description: Docs のビルドに関するイシュー validation-timeout の説明と解決方法
+author: meganbradley
+ms.author: mbradley
+ms.topic: error-reference
+ms.date: 6/5/2019
+ms.prod: non-product-specific
+ms.openlocfilehash: 018634b1c5fba0848fb36a70d81c46be9acf2ecd
+ms.sourcegitcommit: 1e53d17639277bebd89b2e7cabeb45bdad526354
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67024212"
+---
+# <a name="validation-timeout"></a>validation-timeout
+
+## <a name="warning"></a>警告
+
+`The call to the validation service timed out and validation was not completed. This happens when there's an issue with the service and continuing to retry the call could cause build delays. You might have content issues that were not reported. To retry validation, close and open your PR. If you continue to see this message, file an issue via https://SiteHelp.`
+
+サーバーが正常な状態ではない場合など、検証サービスの一時的なイシューによって、Docs のビルドによりそのサービスを正常に呼び出せない場合があります。 ビルドの遅延やビルド パイプラインの渋滞を回避するために、3 回の試行の後、呼び出しはタイムアウトになり、検証はキャンセルされます。
+
+## <a name="resolution"></a>解決方法
+
+PR を閉じてからもう一度開いてみます。または手動ビルドを再実行します (リポジトリ管理者のみ)。 多くの場合、最初の再試行後に、サービスのイシューは自動的にクリアされます。 引き続きメッセージが表示される場合、お客様が Microsoft の従業員である場合は、[https://SiteHelp](https://SiteHelp) 経由でイシューをご提出ください。お客様が外部の共同作成者である場合は、ご自分の PR 内で記事の作成者を @ で言及し、サポートをご依頼ください。
+
+<!--make sure to add this file to your includes folder and verify the path-->
+[!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
