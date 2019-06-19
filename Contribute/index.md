@@ -1,6 +1,6 @@
 ---
 title: Microsoft Docs 共同作成者ガイド概要
-description: このガイドでは、Microsoft ドキュメント サイト docs.microsoft.com で協力する方法について説明します。
+description: このガイドでは、Microsoft ドキュメント サイト docs.microsoft.com で共同作成を行う方法について説明します。
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
@@ -26,7 +26,7 @@ Microsoft のドキュメント セットには、オープン ソースで GitH
 > [!IMPORTANT]
 > docs.microsoft.com に公開されるすべてのリポジトリには、「[Microsoft Open Source Code of Conduct (Microsoft オープン ソース倫理規定)](https://opensource.microsoft.com/codeofconduct/)」または「[.NET Foundation Code of Conduct (.NET Foundation 倫理規定)](https://dotnetfoundation.org/code-of-conduct)」が適用されています。 詳細については、[倫理規定に関する FAQ](https://opensource.microsoft.com/codeofconduct/faq/) のページを参照してください。 または、ご質問やコメントがある場合は、[opencode@microsoft.com](mailto:opencode@microsoft.com) または [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org) までご連絡ください。<br>
 >
-> パブリック リポジトリにあるドキュメントおよびコード例に対する軽微な修正や明確化は、「[docs.microsoft.com - 使用条件](https://docs.microsoft.com/legal/termsofuse)」の対象になります。 お客様が Microsoft の従業員ではない場合、新規または大幅な変更を加えると、オンラインの貢献者使用許諾契約書 (CLA) のご提出をお願いするコメントが pull request 内に生成されます。 ご自身の pull request に対するレビューや承認を可能にするには、オンライン フォームに入力する必要があります。
+> パブリック リポジトリにあるドキュメントおよびコード例に対する軽微な修正や明確化は、「[docs.microsoft.com - 使用条件](https://docs.microsoft.com/legal/termsofuse)」の対象になります。 お客様が Microsoft の従業員ではない場合、新規または大幅な変更を加えると、オンラインの貢献者使用許諾契約書 (CLA) のご提出をお願いするコメントが pull request 内に生成されます。 このオンライン フォームにご入力いただいてから、お客様の pull request に対するレビューや承認を実施いたします。
 
 ## <a name="quick-edits-to-existing-documents"></a>既存のドキュメントに対するクイック編集
 
@@ -69,13 +69,13 @@ GitHub の編集用 UI は、リポジトリに対する自分のアクセス許
 
 ## <a name="review-open-prs"></a>オープン中の PR をレビューする
 
-現在オープン中の PR を確認することで、新しいトピックを公開前に読むことができます。 レビューは [GitHub フロー](https://guides.github.com/introduction/flow/)のプロセスに従います。 提案された更新内容や新しい記事をパブリック リポジトリ内で閲覧できます。 それらをレビューしてコメントを追加します。 任意のドキュメント リポジトリをご覧いただき、関心のある領域について、オープン中の pull requests (PR) をご確認ください。 提案された更新内容に対するコミュニティのフィードバックは、コミュニティ全体の役に立ちます。
+現在オープン中の PR を確認することで、新しいトピックを公開前に読むことができます。 レビューは [GitHub フロー](https://guides.github.com/introduction/flow/)のプロセスに従います。 提案された更新内容や新しい記事をパブリック リポジトリ内で閲覧できます。 それらをレビューしてコメントを追加します。 任意のドキュメント リポジトリをご覧いただき、関心のある領域について、オープン中の pull requests (PR) をご確認くださ。 提案された更新内容に対するコミュニティのフィードバックは、コミュニティ全体の役に立ちます。
 
 ## <a name="create-quality-issues"></a>品質に関するイシューを作成する
 
 Microsoft のドキュメントは、進行中の継続的な作業です。 適切なイシューは、コミュニティの最優先事項に注力するために役立ちます。 提供していただく情報が詳細なほど、イシューは役立つものになります。 お探しだった情報を教えてください。 ご使用になった検索語句を教えてください。 初めてお使いいただくテクノロジについてどう使い始めたらよいのかが不明瞭だった場合、どのようにするのが望ましいかをお聞かせください。
 
-Microsoft のドキュメント ページの多くには、ページの下部に「**フィードバック**」セクションがあります。これをクリックして**製品のフィードバック**または**コンテンツに関するフィードバック**を入力し、その記事に固有の問題を追跡することができます。
+Microsoft のドキュメント ページの多くには、ページの下部に「**フィードバック**」セクションがあります。これをクリックして**製品のフィードバック**または**コンテンツに関するフィードバック**を入力し、その記事に固有のイシューを追跡することができます。
 
 イシューによって、何が必要とされているかについての会話が開始されます。 コンテンツ チームでは、追加できる内容のご提案を含めてこのようなイシューに回答し、ご意見を伺います。 ドラフトを作成し次第、お客様に [PR のレビュー](#review-open-prs)を依頼いたします。
 
