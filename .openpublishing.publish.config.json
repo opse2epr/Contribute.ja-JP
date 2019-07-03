@@ -4,7 +4,7 @@
       "docset_name": "ContributionGuide",
       "build_source_folder": "Contribute",
       "build_output_subfolder": "ContributionGuide",
-      "locale": "ja-JP",
+      "locale": "ja-jp",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": true,
@@ -19,26 +19,30 @@
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live",
     "master"
   ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.ja-jp",
+  "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.ja-JP",
-  "git_repository_branch_open_to_public_contributors": "live",
+  "need_pr_comments": false,
+  "contribution_branch_mappings": {
+    "live-sxs": "live"
+  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.ja-JP",
+      "url": "https://github.com/Microsoft/templates.docs.msft.ja-jp",
       "branch": "master",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_repo.en-us",
-      "url": "https://github.com/MicrosoftDocs/Contribute",
+      "url": "https://github.com/opse2epr/Contribute",
       "branch": "live",
       "branch_mapping": {
         "live": "live",
