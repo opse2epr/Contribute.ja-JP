@@ -1,7 +1,5 @@
 - name: Docs
   href: /
-  homepage: /
   items:
     - name: 共同作成者ガイド
       href: /contribute/
-      homepage: /contribute/
